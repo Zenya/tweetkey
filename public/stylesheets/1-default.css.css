@@ -1,0 +1,988 @@
+/*----------------------------------------------------------------------------------
+ *	1. body, common classes, structure etc
+ *---------------------------------------------------------------------------------- */
+/* line 5, ../../app/assets/stylesheets/1-default.css.sass */
+body {
+  background: #f0f2f6;
+  color: #626262;
+}
+
+/* line 9, ../../app/assets/stylesheets/1-default.css.sass */
+a, .widget li a:hover {
+  color: #4b6ea9;
+  text-decoration: none;
+}
+
+/* line 13, ../../app/assets/stylesheets/1-default.css.sass */
+a:hover, .widget li a {
+  color: black;
+}
+
+/* line 16, ../../app/assets/stylesheets/1-default.css.sass */
+.outer {
+  background: url(1-default/main_bg111.png) repeat-x left top;
+}
+
+/* structure ========================================= */
+/* line 21, ../../app/assets/stylesheets/1-default.css.sass */
+.header {
+  background: white url(1-default/header_bg.png) repeat-x bottom;
+}
+
+/*-----------------------------------------------------------------------------------
+ *	2. Header Styles
+ *----------------------------------------------------------------------------------- */
+/* line 28, ../../app/assets/stylesheets/1-default.css.sass */
+.logo a {
+  color: #334f8a;
+  text-shadow: 2px 2px 2px white;
+}
+/* line 31, ../../app/assets/stylesheets/1-default.css.sass */
+.logo a:hover {
+  color: black;
+}
+
+/* line 34, ../../app/assets/stylesheets/1-default.css.sass */
+.site-description {
+  color: #7b7b7b;
+}
+
+/*-----------------------------------------------------------------------------------
+ *	3. Navigation & Menus - Top Menu
+ *----------------------------------------------------------------------------------- */
+/* line 41, ../../app/assets/stylesheets/1-default.css.sass */
+.header_right ul li {
+  background: url(1-default/menu_seperator.png) no-repeat right;
+}
+/* line 43, ../../app/assets/stylesheets/1-default.css.sass */
+.header_right ul li a {
+  color: #819dcb;
+  text-shadow: 1px 1px 1px white;
+}
+/* line 46, ../../app/assets/stylesheets/1-default.css.sass */
+.header_right ul li a:hover {
+  color: #4e6b9b;
+}
+/* line 48, ../../app/assets/stylesheets/1-default.css.sass */
+.header_right ul li ul {
+  background: #e7eefc;
+}
+/* line 50, ../../app/assets/stylesheets/1-default.css.sass */
+.header_right ul li ul li a {
+  background: #e7eefc;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+}
+/* line 54, ../../app/assets/stylesheets/1-default.css.sass */
+.header_right ul li ul li a:hover {
+  background: #d2def6;
+}
+/* line 56, ../../app/assets/stylesheets/1-default.css.sass */
+.header_right ul li:hover {
+  background: #e7eefc;
+}
+/* line 58, ../../app/assets/stylesheets/1-default.css.sass */
+.header_right ul li:hover ul {
+  background: #e7eefc;
+}
+/* line 60, ../../app/assets/stylesheets/1-default.css.sass */
+.header_right ul li ul li ul {
+  background: #e7eefc;
+}
+/* line 62, ../../app/assets/stylesheets/1-default.css.sass */
+.header_right ul li ul li ul li ul {
+  background: #e7eefc;
+}
+/* line 64, ../../app/assets/stylesheets/1-default.css.sass */
+.header_right ul li.current_page_item a, .header_right ul li.current_page_parent a, .header_right ul li.current_page_ancestor a, .header_right ul li.current-header_right-item a, .header_right ul li.current_page_item ul li a, .header_right ul li.current-bcategory-ancestor ul li a {
+  background: #e7eefc;
+  color: #333333;
+}
+/* line 67, ../../app/assets/stylesheets/1-default.css.sass */
+.header_right ul li.current_page_item ul li a:hover, .header_right ul li.current-bcategory-ancestor ul li a:hover {
+  background: #d2def6;
+  color: #333333;
+}
+/* line 71, ../../app/assets/stylesheets/1-default.css.sass */
+.header_right ul li.current_page_parent ul li.current_page_item a {
+  background: #d2def6;
+  color: #333333;
+}
+/* line 74, ../../app/assets/stylesheets/1-default.css.sass */
+.header_right ul li.current_page_parent ul li a {
+  background: #e7eefc;
+  color: #333333;
+}
+/* line 77, ../../app/assets/stylesheets/1-default.css.sass */
+.header_right ul li.current_page_parent ul li a:hover {
+  background: #d2def6;
+  color: #4e6b9b;
+}
+/* line 80, ../../app/assets/stylesheets/1-default.css.sass */
+.header_right ul li.current_page_parent ul li.current_page_item ul li a {
+  background: #e7eefc;
+  color: #333333;
+}
+/* line 83, ../../app/assets/stylesheets/1-default.css.sass */
+.header_right ul li.current_page_parent ul li.current_page_item ul li a:hover {
+  background: #d2def6;
+  color: #333333;
+}
+/* line 87, ../../app/assets/stylesheets/1-default.css.sass */
+.header_right ul li.current_page_ancestor ul li.current_page_parent a {
+  background: #d2def6;
+  color: #333333;
+}
+/* line 90, ../../app/assets/stylesheets/1-default.css.sass */
+.header_right ul li.current_page_ancestor ul li.current_page_parent ul li a {
+  background: #e7eefc;
+  color: #333333;
+}
+/* line 93, ../../app/assets/stylesheets/1-default.css.sass */
+.header_right ul li.current_page_ancestor ul li.current_page_parent ul li a:hover {
+  background: #d2def6;
+  color: #333333;
+}
+/* line 98, ../../app/assets/stylesheets/1-default.css.sass */
+.header_right ul li ul li.current_page_parent ul li.current_page_item a, .header_right ul li ul li.current_page_ancestor a {
+  background: #d2def6;
+  color: #333333;
+}
+/* line 101, ../../app/assets/stylesheets/1-default.css.sass */
+.header_right ul li ul li.current_page_parent ul li.current_page_item ul li a, .header_right ul li ul li.current_page_ancestor ul li a {
+  background: #e7eefc;
+  color: #333333;
+}
+/* line 104, ../../app/assets/stylesheets/1-default.css.sass */
+.header_right ul li ul li.current_page_parent ul li.current_page_item ul li a:hover, .header_right ul li ul li.current_page_ancestor ul li a:hover {
+  background: #d2def6;
+  color: #333333;
+}
+
+/*-----------------------------------------------------------------------------------
+ *	4. Navigation & Menus - Main Menu
+ *----------------------------------------------------------------------------------- */
+/* line 114, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in ul li:hover li a, .main_nav_in ul li.iehover li a {
+  border: 1px solid #6881a9;
+  border-top: none;
+}
+/* line 117, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in ul li a {
+  background: url(1-default/seperator.png) no-repeat right 20px;
+  color: white;
+}
+/* line 120, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in li:hover li a {
+  background: url(1-default/seperator.png) no-repeat right 20px;
+  color: white;
+}
+/* line 125, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in ul li.iehover li a, .main_nav_in ul li:hover li:hover li a, .main_nav_in ul li.iehover li.iehover li a, .main_nav_in ul li:hover li:hover li:hover li a, .main_nav_in ul li.iehover li.iehover li.iehover li a, .main_nav_in ul li:hover li:hover li:hover li:hover li a, .main_nav_in ul li.iehover li.iehover li.iehover li.iehover li a {
+  background: url(1-default/seperator.png) no-repeat right 20px;
+  color: white;
+}
+/* line 128, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in ul li.current_page_parent {
+  color: white;
+  background: url(1-default/active_bg.png) top left no-repeat;
+}
+/* line 131, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in ul a:hover {
+  color: white;
+  background: url(1-default/active_bg.png) top right no-repeat;
+}
+/* line 135, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in ul li:hover a, .main_nav_in ul li.iehover a, .main_nav_in ul li:hover a:hover {
+  color: white;
+  background: url(1-default/active_bg.png) top right no-repeat;
+}
+/* line 139, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in li.current_page_ancestor a {
+  background: url(1-default/active_bg.png) top left no-repeat;
+  color: white;
+}
+/* line 142, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in li.current_page_ancestor a:hover {
+  background: url(1-default/active_bg.png) top left no-repeat;
+  color: white;
+}
+/* line 146, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in li.current_page_ancestor ul li.current_page_ancestor a, .main_nav_in li.current_page_ancestor ul li.current_page_ancestor li.current_page_item a {
+  background: url(1-default/active_bg.png) top left no-repeat;
+  color: white;
+}
+/* line 149, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in li.current_page_ancestor ul li.current_page_ancestor a:hover, .main_nav_in li.current_page_ancestor ul li.current_page_ancestor li.current_page_item a:hover {
+  background: url(1-default/active_bg.png) top left no-repeat;
+  color: white;
+}
+/* line 153, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in li.current_page_ancestor ul li.current_page_ancestor ul li.current_page_ancestor a {
+  background: url(1-default/active_bg.png) top left no-repeat;
+  color: white;
+}
+/* line 156, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in li.current_page_ancestor ul li.current_page_ancestor ul li.current_page_ancestor a:hover {
+  background: url(1-default/active_bg.png) top left no-repeat;
+  color: white;
+}
+/* line 160, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in li.current_page_ancestor ul li.current_page_ancestor ul li.current_page_ancestor ul li.current_page_ancestor a, .main_nav_in li.current_page_ancestor ul li.current_page_ancestor ul li.current_page_ancestor ul li.current_page_ancestor ul li.current_page_ancestor a {
+  background: url(1-default/active_bg.png) top left no-repeat;
+  color: white;
+}
+/* line 163, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in li.current_page_ancestor ul li.current_page_ancestor ul li.current_page_ancestor ul li.current_page_ancestor a:hover, .main_nav_in li.current_page_ancestor ul li.current_page_ancestor ul li.current_page_ancestor ul li.current_page_ancestor ul li.current_page_ancestor a:hover {
+  background: url(1-default/active_bg.png) top left no-repeat;
+  color: white;
+}
+/* line 168, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in ul li:hover li a:hover, .main_nav_in ul li:hover li:hover a {
+  background: url(1-default/active_bg.png) top left no-repeat;
+  color: white;
+}
+/* line 172, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in ul li.iehover li a:hover, .main_nav_in ul li.iehover li.iehover a {
+  background: url(1-default/active_bg.png) top left no-repeat;
+  color: white;
+}
+/* line 176, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in ul li:hover li:hover li a:hover, .main_nav_in ul li:hover li:hover li:hover a {
+  background: url(1-default/active_bg.png) top left no-repeat;
+  color: white;
+}
+/* line 180, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in ul li.iehover li.iehover li a:hover, .main_nav_in ul li.iehover li.iehover li.iehover a {
+  background: url(1-default/active_bg.png) top left no-repeat;
+  color: white;
+}
+/* line 184, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in ul li:hover li:hover li:hover li a:hover, .main_nav_in ul li:hover li:hover li:hover li:hover a {
+  background: url(1-default/active_bg.png) top left no-repeat;
+  color: white;
+}
+/* line 188, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in ul li.iehover li.iehover li.iehover li a:hover, .main_nav_in ul li.iehover li.iehover li.iehover li.iehover a {
+  background: url(1-default/active_bg.png) top left no-repeat;
+  color: white;
+}
+/* line 191, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in ul li:hover li:hover li:hover li:hover li:hover a, .main_nav_in ul li.iehover li.iehover li.iehover li.iehover li.iehover a, .main_nav_in ul li:hover li:hover li:hover li:hover li a:hover, .main_nav_in ul li.iehover li.iehover li.iehover li.iehover li a:hover {
+  background: url(1-default/active_bg.png) top left no-repeat;
+  color: white;
+}
+/* line 195, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in li:hover, .main_nav_in li.iehover, .main_nav_in li.current_page_item, .main_nav_in li.iehover, .main_nav_in li.current_page_ancestor, .main_nav_in li.current-cat {
+  background: url(1-default/active_bg.png) top left no-repeat;
+  color: white;
+}
+/* line 198, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in li:hover a, .main_nav_in li.iehover a, .main_nav_in li.current_page_item a, .main_nav_in li.current-cat a {
+  color: white;
+  background: url(1-default/active_bg.png) top right no-repeat;
+}
+/* line 201, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in li.current_page_ancestor a {
+  color: white;
+  background: url(1-default/active_bg.png) top right no-repeat;
+}
+/* line 204, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in li.current_page_ancestor a:hover {
+  color: white;
+  background: url(1-default/active_bg.png) top right no-repeat;
+}
+/* line 207, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in li.current_page_parent a {
+  color: white;
+  background: url(1-default/active_bg.png) top right no-repeat;
+}
+/* line 210, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in li a {
+  color: white;
+  background: url(1-default/active_bg.png) top right no-repeat;
+}
+/* line 213, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in li a:hover {
+  color: white;
+  background: url(1-default/active_bg.png) top right no-repeat;
+}
+/* line 217, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in li ul li ul li.current_page_parent a, .main_nav_in li ul li.current_page_ancestor a, .main_nav_in li ul li ul li.current_page_parent a:hover, .main_nav_in li ul li.current_page_ancestor a:hover {
+  background-position: -5px 0 !important;
+}
+/* line 221, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in ul li:hover li a:hover, .main_nav_in ul li:hover li:hover a {
+  background: #2b3c57;
+  color: white;
+}
+/* line 225, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in ul li.iehover li a:hover, .main_nav_in ul li.iehover li.iehover a {
+  background: #2b3c57;
+  color: white;
+}
+/* line 229, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in ul li:hover li:hover li a:hover, .main_nav_in ul li:hover li:hover li:hover a {
+  background: #2b3c57;
+  color: white;
+}
+/* line 233, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in ul li.iehover li.iehover li a:hover, .main_nav_in ul li.iehover li.iehover li.iehover a {
+  background: #2b3c57;
+  color: white;
+}
+/* line 237, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in ul li:hover li:hover li:hover li a:hover, .main_nav_in ul li:hover li:hover li:hover li:hover a {
+  background: #2b3c57;
+  color: white;
+}
+/* line 241, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in ul li.iehover li.iehover li.iehover li a:hover, .main_nav_in ul li.iehover li.iehover li.iehover li.iehover a {
+  background: #2b3c57;
+  color: white;
+}
+/* line 244, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in ul li:hover li:hover li:hover li:hover li:hover a, .main_nav_in ul li.iehover li.iehover li.iehover li.iehover li.iehover a, .main_nav_in ul li:hover li:hover li:hover li:hover li a:hover, .main_nav_in ul li.iehover li.iehover li.iehover li.iehover li a:hover {
+  background: #2b3c57;
+  color: white;
+}
+/* line 248, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in ul li:hover li a {
+  background: #425a82;
+  color: white;
+}
+/* line 252, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in ul li:hover li:hover li a {
+  background: #425a82;
+  color: white;
+}
+/* line 256, ../../app/assets/stylesheets/1-default.css.sass */
+.main_nav_in ul li:hover li:hover li:hover li a, .main_nav_in ul li:hover li:hover li:hover li :hover li a {
+  background: #425a82;
+  color: white;
+}
+
+/* Top level */
+/* Root Menu Hover Persistence */
+/* Remembers the parent page of the current page ------------------------------------- */
+/* IE verticle Specific ------------------------------------- */
+/* 2nd Menu Hover Persistence */
+/* IE verticle Specific ------------------------------------- */
+/* 2nd Menu Hover Persistence */
+/*-----------------------------------------------------------------------------------
+ *	5. Main Content Styles
+ *----------------------------------------------------------------------------------- */
+/* line 276, ../../app/assets/stylesheets/1-default.css.sass */
+.content_top {
+  background: url(1-default/content_top.png) no-repeat left top;
+}
+
+/* line 279, ../../app/assets/stylesheets/1-default.css.sass */
+.content_bg {
+  background: url(1-default/content_bg.png) repeat-y left;
+}
+
+/* line 282, ../../app/assets/stylesheets/1-default.css.sass */
+.content_bottom {
+  background: url(1-default/content_bottom.png) no-repeat left bottom;
+}
+
+/* line 285, ../../app/assets/stylesheets/1-default.css.sass */
+.content_top_full, .content_full .content_top {
+  background: url(1-default/content_top_full.png) no-repeat left top;
+}
+
+/* line 288, ../../app/assets/stylesheets/1-default.css.sass */
+.content_bg_full, .content_full .content_bg {
+  background: url(1-default/content_bg_full.png) repeat-y left;
+}
+
+/* line 291, ../../app/assets/stylesheets/1-default.css.sass */
+.content_bottom_full, .content_full .content_bottom {
+  background: url(1-default/content_bottom_full.png) no-repeat left bottom;
+}
+
+/* line 294, ../../app/assets/stylesheets/1-default.css.sass */
+h1, h2, h3, h4, h5, h6 {
+  color: #101010;
+}
+
+/* line 297, ../../app/assets/stylesheets/1-default.css.sass */
+.post-meta h1 {
+  border-bottom: 1px solid #d6dce8;
+}
+
+/* line 300, ../../app/assets/stylesheets/1-default.css.sass */
+.content .post-meta {
+  color: #828282;
+}
+
+/* line 303, ../../app/assets/stylesheets/1-default.css.sass */
+.post .post-meta a, .entry .post-meta a {
+  color: #353535;
+}
+
+/* line 306, ../../app/assets/stylesheets/1-default.css.sass */
+.post .post-meta a:hover, .entry .post-meta a:hover {
+  color: #4b6ea9;
+}
+
+/* line 310, ../../app/assets/stylesheets/1-default.css.sass */
+.post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5 {
+  color: #101010;
+}
+
+/* line 313, ../../app/assets/stylesheets/1-default.css.sass */
+.detail-title h1 {
+  color: #101010;
+}
+
+/* line 316, ../../app/assets/stylesheets/1-default.css.sass */
+.post-content a {
+  color: #4b6ea9;
+}
+/* line 318, ../../app/assets/stylesheets/1-default.css.sass */
+.post-content a:hover {
+  color: #222222;
+}
+
+/* line 321, ../../app/assets/stylesheets/1-default.css.sass */
+.vote_box a:hover {
+  color: #222222;
+}
+
+/* line 324, ../../app/assets/stylesheets/1-default.css.sass */
+.post-content blockquote {
+  background: #f7f7f7 url(1-default/quote_left.png) no-repeat 30px 20px;
+  border-top: 6px solid #f0f0f0;
+}
+/* line 327, ../../app/assets/stylesheets/1-default.css.sass */
+.post-content blockquote p {
+  background: url(1-default/quote_right.png) no-repeat 590px 20px;
+}
+
+/* line 330, ../../app/assets/stylesheets/1-default.css.sass */
+.share_post {
+  border-top: 4px solid #eaeae9;
+  border-bottom: 1px solid #eaeae9;
+}
+
+/* line 334, ../../app/assets/stylesheets/1-default.css.sass */
+.vote_box {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  background: #f8f8f8;
+}
+/* line 338, ../../app/assets/stylesheets/1-default.css.sass */
+.vote_box label, .vote_box a {
+  color: #334f8a;
+}
+/* line 341, ../../app/assets/stylesheets/1-default.css.sass */
+.vote_box a img {
+  background: #f5f5f5;
+  border: 1px solid #c7c7c7;
+}
+/* line 344, ../../app/assets/stylesheets/1-default.css.sass */
+.vote_box a:hover img {
+  border: 1px solid #777777;
+}
+
+/* line 347, ../../app/assets/stylesheets/1-default.css.sass */
+.post a.hype_link, .b_like_disable, .post a:hover.hype_link {
+  background: #4b6ea9;
+  color: white;
+}
+
+/* line 351, ../../app/assets/stylesheets/1-default.css.sass */
+.span_currentvote {
+  background: #324a73;
+  color: white;
+}
+
+/* line 355, ../../app/assets/stylesheets/1-default.css.sass */
+.span_plusvote, .span_minusvote {
+  background: black;
+  color: white;
+}
+
+/* line 359, ../../app/assets/stylesheets/1-default.css.sass */
+.welcome_box {
+  background: #f5f5f6;
+  border: 1px solid #e1e1e1;
+}
+
+/*-----------------------------------------------------------------------------------
+ *	6. Post Page Navigation 
+ *----------------------------------------------------------------------------------- */
+/* single page post navigation --------------------------- */
+/* line 368, ../../app/assets/stylesheets/1-default.css.sass */
+.post-navigation {
+  border-top: 1px solid #d6dce8;
+  border-bottom: 1px solid #d6dce8;
+}
+/* line 371, ../../app/assets/stylesheets/1-default.css.sass */
+.post-navigation a {
+  color: #334f8a;
+}
+/* line 373, ../../app/assets/stylesheets/1-default.css.sass */
+.post-navigation a:hover {
+  color: #222222;
+}
+
+/* line 377, ../../app/assets/stylesheets/1-default.css.sass */
+a.post-prev {
+  background: url(1-default/i_previous.png) no-repeat left;
+}
+/* line 379, ../../app/assets/stylesheets/1-default.css.sass */
+a:hover.post-prev {
+  background: url(1-default/i_previous_h.png) no-repeat left;
+}
+/* line 381, ../../app/assets/stylesheets/1-default.css.sass */
+a.post-next {
+  background: url(1-default/i_next.png) no-repeat right;
+}
+/* line 383, ../../app/assets/stylesheets/1-default.css.sass */
+a:hover.post-next {
+  background: url(1-default/i_next_h.png) no-repeat right;
+}
+
+/* post pagination --------------------------- */
+/* line 389, ../../app/assets/stylesheets/1-default.css.sass */
+.Navi .on {
+  background: #4b6ea9;
+  color: white;
+}
+/* line 392, ../../app/assets/stylesheets/1-default.css.sass */
+.Navi a {
+  background: #f1f1f1;
+  color: #919191;
+}
+/* line 395, ../../app/assets/stylesheets/1-default.css.sass */
+.Navi a:hover {
+  background: #4b6ea9;
+  color: white;
+}
+
+/*-----------------------------------------------------------------------------------
+ *	7. Comments
+ *----------------------------------------------------------------------------------- */
+/* line 403, ../../app/assets/stylesheets/1-default.css.sass */
+.comments h3 {
+  color: #334f8a;
+}
+
+/* line 406, ../../app/assets/stylesheets/1-default.css.sass */
+.comment {
+  background: #f4f6fa url(1-default/comment_line.png) repeat-y 99px 0px;
+  border: 1px solid #d6dae4 !important;
+}
+
+/* line 410, ../../app/assets/stylesheets/1-default.css.sass */
+.comment-meta {
+  border-bottom: 1px solid #d6dae4;
+  color: #818181;
+}
+/* line 413, ../../app/assets/stylesheets/1-default.css.sass */
+.comment-meta a {
+  color: #334f8a;
+}
+/* line 415, ../../app/assets/stylesheets/1-default.css.sass */
+.comment-meta a:hover {
+  color: #222222;
+}
+
+/* line 420, ../../app/assets/stylesheets/1-default.css.sass */
+a.comment-reply-link {
+  background: #91a7ca url(1-default/reply_arrow.png) no-repeat 47px;
+  color: white;
+  border-bottom: 1px solid #8394af;
+}
+/* line 424, ../../app/assets/stylesheets/1-default.css.sass */
+a.comment-reply-link:hover {
+  background: #7084a2 url(1-default/reply_arrow.png) no-repeat 47px;
+  color: white;
+  border-bottom: 1px solid #8394af;
+}
+
+/* comment form ----------------------- */
+/* line 431, ../../app/assets/stylesheets/1-default.css.sass */
+#respond h3 {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* line 435, ../../app/assets/stylesheets/1-default.css.sass */
+.comments p.commpadd .author {
+  background: url(1-default/i_user.png) no-repeat left top;
+}
+/* line 437, ../../app/assets/stylesheets/1-default.css.sass */
+.comments p.commpadd .email2 {
+  background: url(1-default/i_email.png) no-repeat left top;
+}
+/* line 439, ../../app/assets/stylesheets/1-default.css.sass */
+.comments p.commpadd .site {
+  background: url(1-default/i_web.png) no-repeat left top;
+}
+/* line 441, ../../app/assets/stylesheets/1-default.css.sass */
+.comments p.commpadd .comment2 {
+  background: url(1-default/i_comment2.png) no-repeat left top;
+}
+/* line 443, ../../app/assets/stylesheets/1-default.css.sass */
+.comments p.commpadd input {
+  background: url(1-default/textfieldbg.png) no-repeat left top;
+  border: none;
+  color: #a6a6a6;
+}
+
+/* line 448, ../../app/assets/stylesheets/1-default.css.sass */
+#respond textarea {
+  background: url(1-default/textarea.png) no-repeat left top;
+  color: #a6a6a6;
+}
+
+/* line 452, ../../app/assets/stylesheets/1-default.css.sass */
+.comments .comment .text-right p a.comment-reply-link {
+  background: url(1-default/buttonbg.png) repeat-x left top;
+}
+
+/* line 455, ../../app/assets/stylesheets/1-default.css.sass */
+#submit {
+  background: url(1-default/submit_btn.png) repeat-x;
+  color: white;
+  text-shadow: 1px 1px 1px #40577e;
+}
+/* line 459, ../../app/assets/stylesheets/1-default.css.sass */
+#submit:hover {
+  background: url(1-default/submit_btn_h.png) repeat-x;
+}
+
+/*-----------------------------------------------------------------------------------
+ *	 8. Widget
+ *----------------------------------------------------------------------------------- */
+/* line 466, ../../app/assets/stylesheets/1-default.css.sass */
+.widget h3, .widget-small h3 {
+  color: white;
+  text-shadow: 1px 1px 1px #7b8eac;
+  background: url(1-default/title_bg.png) no-repeat;
+  border-bottom: none;
+}
+
+/* line 472, ../../app/assets/stylesheets/1-default.css.sass */
+.article_btn {
+  color: #4c6fa9;
+  background: url(1-default/submit_article.png) no-repeat;
+  text-shadow: 1px 1px 1px white;
+}
+/* line 476, ../../app/assets/stylesheets/1-default.css.sass */
+.article_btn:hover {
+  background: url(1-default/submit_article_h.png) no-repeat;
+}
+
+/* line 479, ../../app/assets/stylesheets/1-default.css.sass */
+.submit_article small {
+  color: #b4c4de;
+  text-shadow: 1px 1px 1px #466395;
+}
+
+/* login widget ----------- */
+/* line 486, ../../app/assets/stylesheets/1-default.css.sass */
+.login_widget .form_row .textfield {
+  border: 1px solid #c7ccd6;
+  border-top: 2px solid #b3b3b3;
+  border-left: 2px solid #b3b3b3;
+  color: #626262;
+}
+/* line 491, ../../app/assets/stylesheets/1-default.css.sass */
+.login_widget .b_signin {
+  color: white;
+  text-shadow: 1px 1px 1px #384b6c;
+  background: url(1-default/btn_login.png) no-repeat right top;
+}
+/* line 495, ../../app/assets/stylesheets/1-default.css.sass */
+.login_widget .b_signin:hover {
+  background: url(1-default/btn_login_h.png) no-repeat right top;
+}
+/* line 497, ../../app/assets/stylesheets/1-default.css.sass */
+.login_widget .b_forgotpass {
+  color: white;
+  text-shadow: 1px 1px 1px #384b6c;
+  background: url(1-default/btn_login.png) repeat-x right top;
+}
+/* line 501, ../../app/assets/stylesheets/1-default.css.sass */
+.login_widget .b_forgotpass:hover {
+  background: url(1-default/btn_login_h.png) no-repeat right top;
+}
+
+/* line 504, ../../app/assets/stylesheets/1-default.css.sass */
+#testimonials blockquote {
+  background: #f0f2f6;
+}
+
+/* line 507, ../../app/assets/stylesheets/1-default.css.sass */
+#contact_widget_frm .b_submit, #contact_frm .b_submit, #advancedsearch .adv_submit {
+  color: white;
+  text-shadow: 1px 1px 1px #384b6c;
+  background: url(1-default/btn_login.png) repeat-x right top;
+}
+
+/* line 512, ../../app/assets/stylesheets/1-default.css.sass */
+#contact_widget_frm .b_submit:hover, #contact_frm .b_submit:hover, #advancedsearch .adv_submit:hover {
+  background: url(1-default/btn_login_h.png) no-repeat right top;
+}
+
+/* line 515, ../../app/assets/stylesheets/1-default.css.sass */
+.sidebar .latest_posts li, #twitter_update_list li {
+  border-bottom: 2px solid white;
+}
+
+/* line 518, ../../app/assets/stylesheets/1-default.css.sass */
+.sidebar .latest_posts li:last-child, #twitter_update_list li:last-child {
+  border-bottom: none;
+}
+
+/* line 521, ../../app/assets/stylesheets/1-default.css.sass */
+.b_twitter {
+  background: url(1-default/i_twitter.png) no-repeat left top;
+}
+
+/* line 524, ../../app/assets/stylesheets/1-default.css.sass */
+.latest_posts li, .popular li, #twitter li {
+  border-bottom: 2px solid white;
+}
+
+/* login form color & bg */
+/* line 529, ../../app/assets/stylesheets/1-default.css.sass */
+.login_form_l {
+  border: 3px double #cccccc;
+}
+
+/* line 535, ../../app/assets/stylesheets/1-default.css.sass */
+.login_form_l .form_row label, .registration_form_box .form_row label {
+  color: #4a4a4a;
+}
+
+/* line 538, ../../app/assets/stylesheets/1-default.css.sass */
+.login_form_l .form_row .textfield, .registration_form_box .form_row .textfield {
+  border: 1px double #cccccc;
+  background: white;
+}
+
+/* line 542, ../../app/assets/stylesheets/1-default.css.sass */
+.login_form_l a {
+  color: #cc4b3e;
+  font-size: 12px;
+}
+/* line 545, ../../app/assets/stylesheets/1-default.css.sass */
+.login_form_l a:hover {
+  color: #333333;
+}
+
+/* line 548, ../../app/assets/stylesheets/1-default.css.sass */
+.upload_img input {
+  border: 1px solid #cccccc;
+}
+
+/* line 551, ../../app/assets/stylesheets/1-default.css.sass */
+.error_msg {
+  background: #ffe4e4;
+  border-top: 1px solid #ee8686;
+  border-bottom: 1px solid #ee8686;
+  color: #d70000;
+}
+
+/* line 557, ../../app/assets/stylesheets/1-default.css.sass */
+.success_msg {
+  text-align: center;
+  color: #356c1d;
+  background: #cee8c3;
+  border-top: 1px solid #7ea96b;
+  border-bottom: 1px solid #7ea96b;
+}
+
+/* line 564, ../../app/assets/stylesheets/1-default.css.sass */
+.login_form_l .b_signin_n {
+  color: white;
+  border: none;
+  text-shadow: 1px 1px 1px #384b6c;
+  background: url(1-default/btn_login.png) repeat-x right top;
+}
+/* line 569, ../../app/assets/stylesheets/1-default.css.sass */
+.login_form_l .b_signin_n:hover {
+  background: url(1-default/btn_login_h.png) no-repeat right top;
+}
+
+/* registration color */
+/* line 574, ../../app/assets/stylesheets/1-default.css.sass */
+#reg_passmail {
+  color: #a8a79f;
+}
+
+/* line 577, ../../app/assets/stylesheets/1-default.css.sass */
+.registration_form_box {
+  border: 3px double #cccccc;
+}
+/* line 579, ../../app/assets/stylesheets/1-default.css.sass */
+.registration_form_box .b_registernow {
+  color: white;
+  border: none;
+  text-shadow: 1px 1px 1px #384b6c;
+  background: url(1-default/btn_login.png) repeat-x right top;
+}
+/* line 584, ../../app/assets/stylesheets/1-default.css.sass */
+.registration_form_box .b_registernow:hover {
+  background: url(1-default/btn_login_h.png) no-repeat right top;
+}
+
+/*-----------------------------------------------------------------------------------
+ *   9. Bottom Section
+ *----------------------------------------------------------------------------------- */
+/* line 591, ../../app/assets/stylesheets/1-default.css.sass */
+.bottom .widget h3 {
+  color: #4b6ea9;
+  background: none;
+  text-shadow: 1px 1px 1px white;
+}
+
+/* line 596, ../../app/assets/stylesheets/1-default.css.sass */
+.one_column {
+  background: white;
+}
+
+/*-----------------------------------------------------------------------------------
+ *	 10. Footer
+ *----------------------------------------------------------------------------------- */
+/* line 603, ../../app/assets/stylesheets/1-default.css.sass */
+.footer_in {
+  color: #959595;
+}
+/* line 605, ../../app/assets/stylesheets/1-default.css.sass */
+.footer_in a {
+  color: #959595;
+}
+
+/*-----------------------------------------------------------------------------------
+ *	17. Tabber  Style start
+ *----------------------------------------------------------------------------------- */
+/* line 612, ../../app/assets/stylesheets/1-default.css.sass */
+.tabbernav {
+  background: url(1-default/tab_bg.png) repeat-x bottom;
+}
+/* line 615, ../../app/assets/stylesheets/1-default.css.sass */
+.tabbernav li a {
+  color: #9aacc9;
+}
+/* line 617, ../../app/assets/stylesheets/1-default.css.sass */
+.tabbernav li a:hover {
+  color: #3b5998;
+}
+/* line 619, ../../app/assets/stylesheets/1-default.css.sass */
+.tabbernav li.tabberactive {
+  background: url(1-default/tab_active.png) repeat-x;
+  color: #3b5998;
+  border: 1px solid #c9d4ea;
+  border-bottom: 0px;
+}
+/* line 624, ../../app/assets/stylesheets/1-default.css.sass */
+.tabbernav li.tabberactive a {
+  color: #3b5998;
+  background: none;
+}
+/* line 627, ../../app/assets/stylesheets/1-default.css.sass */
+.tabbernav li.tabberactive a:hover {
+  color: #3b5998;
+}
+
+/* line 630, ../../app/assets/stylesheets/1-default.css.sass */
+.post a {
+  color: #4b6ea9;
+}
+/* line 632, ../../app/assets/stylesheets/1-default.css.sass */
+.post a:hover {
+  color: #324a73;
+}
+
+/* line 635, ../../app/assets/stylesheets/1-default.css.sass */
+.post-category {
+  background: url(1-default/i_folder.png) no-repeat 0px 2px;
+}
+
+/* line 638, ../../app/assets/stylesheets/1-default.css.sass */
+.single_comments a {
+  background: url(1-default/i_comment.png) no-repeat 0px 3px;
+}
+/* line 640, ../../app/assets/stylesheets/1-default.css.sass */
+.single_comments a:hover {
+  background: url(1-default/i_comment.png) no-repeat 0px 3px;
+}
+
+/* line 643, ../../app/assets/stylesheets/1-default.css.sass */
+.single-website a {
+  background: url(1-default/i_website.png) no-repeat 0px 3px;
+}
+
+/* line 646, ../../app/assets/stylesheets/1-default.css.sass */
+.post-tags {
+  background: url(1-default/i_tag.png) no-repeat 0px 2px;
+}
+
+/* line 649, ../../app/assets/stylesheets/1-default.css.sass */
+.at15t_compact {
+  background: url(1-default/i_share.png) no-repeat 0px 11px !important;
+}
+
+/* line 653, ../../app/assets/stylesheets/1-default.css.sass */
+.post-meta .edit a {
+  background: url(1-default/i_edit.png) no-repeat 0px 2px;
+  color: #009900;
+}
+/* line 656, ../../app/assets/stylesheets/1-default.css.sass */
+.post-meta .delete a {
+  background: url(1-default/i_delete.png) no-repeat 0px 2px;
+  color: #cc0000;
+}
+
+/* line 660, ../../app/assets/stylesheets/1-default.css.sass */
+.published {
+  background: url(1-default/i_checkmark.png) no-repeat 0px 0px;
+}
+
+/* line 663, ../../app/assets/stylesheets/1-default.css.sass */
+.blog_listing a.hype_lnk, a.hype_lnk {
+  color: white;
+}
+
+/*-----------------------------------------------------------------------------------
+ *	 18. Add listing Form 
+ *----------------------------------------------------------------------------------- */
+/* line 670, ../../app/assets/stylesheets/1-default.css.sass */
+.button {
+  color: white;
+  border: none;
+  text-shadow: 1px 1px 1px #384b6c;
+  background: url(1-default/btn.png) repeat-x right bottom;
+}
+/* line 675, ../../app/assets/stylesheets/1-default.css.sass */
+.button:hover {
+  background: url(1-default/btn_h.png) no-repeat right bottom;
+}
+
+/* line 678, ../../app/assets/stylesheets/1-default.css.sass */
+.b_cancel, .b_publish, .entry .post-content a.b_goback {
+  color: white;
+  border: none;
+  text-shadow: 1px 1px 1px #384b6c;
+  background: url(1-default/btn_login.png) repeat-x right bottom;
+}
+/* line 683, ../../app/assets/stylesheets/1-default.css.sass */
+.b_cancel:hover, .b_publish:hover, .entry .post-content a.b_goback:hover {
+  background: url(1-default/btn_login_h.png) no-repeat right bottom;
+}
+
+/* line 686, ../../app/assets/stylesheets/1-default.css.sass */
+.b_cancel:hover {
+  background: url(1-default/btn_login_h.png) no-repeat right bottom;
+}
+
+/*a.hype_lnk .number{ background:#324a73; }
+ *a.hype_lnk .hype{ background:#4b6ea9; color:#fff }
+ *a:hover.hype_lnk .hype{ background:#344e7b; color:#fff; }
+ *a:hover.hype_lnk:hover  .number{ background:#000; color:#fff; } */

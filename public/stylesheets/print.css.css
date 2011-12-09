@@ -1,0 +1,18 @@
+/* line 1, ../../app/assets/stylesheets/print.css.sass */
+.top_navigation, .header, .logo, .post-meta, #comments, .bottom, .comments, .post-navigation, .main_nav, .breadcrumb, .sidebar {
+  display: none !important;
+}
+
+/* line 4, ../../app/assets/stylesheets/print.css.sass */
+.singleh1 {
+  line-height: normal;
+}
+
+/* line 7, ../../app/assets/stylesheets/print.css.sass */
+body {
+  float: none !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}

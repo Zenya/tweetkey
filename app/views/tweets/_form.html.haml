@@ -1,0 +1,14 @@
+= form_for @tweet do |f|
+  = f.label :Category
+  = f.collection_select :category, Category.all, :id, :name, :prompt => true
+  %br
+  = f.label :Hotkey
+  %br
+  = f.text_field :hotkey
+  %br
+  = f.label :Description
+  %br 
+  = f.text_area :description
+  %br
+  = hidden_field :tweet, :author, :value => current_user
+  = f.submit("Post")

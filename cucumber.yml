@@ -1,0 +1,2 @@
+#default: -r features/support -r features/step_definitions --format pretty features
+default: --drb -r features/support -r features/step_definitions --format pretty features

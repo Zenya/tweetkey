@@ -1,0 +1,486 @@
+/*----------------------------------------------------------------------------------- 
+ *	CSS Reset & Clearfix
+ *----------------------------------------------------------------------------------
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+  margin: 0
+  padding: 0
+  border: 0
+  outline: 0
+  font-size: 100%
+  vertical-align: baseline
+  background: transparent
+
+body
+  line-height: 1
+  text-align: left
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote
+  &:before, &:after
+    content: ''
+    content: none
+
+q
+  &:before, &:after
+    content: ''
+    content: none
+
+\:focus
+  outline: 0
+
+ins
+  text-decoration: none
+
+del
+  text-decoration: line-through
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+.none
+  display: none
+
+/*----------------------------------------------------------------------------------
+ *	common classes, structure etc
+ *----------------------------------------------------------------------------------
+
+.left
+  float: left
+
+.right
+  float: right
+
+/* instruction elements --------------------------------------
+
+.content p
+  &.alert, &.download, &.info
+    margin: 10px 0 10px 0
+    padding: 9px 10px 9px 40px
+  &.note
+    margin: 10px 0 10px 0
+    padding: 9px 10px 9px 40px
+    margin: 10px 0 10px 0
+  &.alert
+    border-top: 1px solid #f0baa2
+    border-bottom: 1px solid #f0baa2
+    background: #ffd9c8 url(images/i_alert.png) no-repeat 12px 13px
+  &.download
+    border-top: 1px solid #d4ebaf
+    border-bottom: 1px solid #d4ebaf
+    background: #edfcd5 url(images/i_download.png) no-repeat 10px 13px
+  &.info
+    border-top: 1px solid #ccc
+    border-bottom: 1px solid #ccc
+    background: #eeeeee url(images/i_note2.png) no-repeat 12px 13px
+  &.note
+    border-top: 1px solid #efe3ae
+    border-bottom: 1px solid #efe3ae
+    background: #fef6d2 url(images/i_info.png) no-repeat 14px 13px
+    margin: 10px 0 10px 0
+
+/* instruction elements --------------------------------------
+
+/*-----------------------------------------------------------------------------------
+ *	Wordpress images alignment
+ *-----------------------------------------------------------------------------------
+
+.post-content
+  img
+    margin: 0
+  .attachment img
+  .alignleft, img.alignleft
+    display: inline
+    float: left
+    margin-right: 24px
+    margin-top: 4px
+    border: 1px solid #ccc
+  .alignright, img.alignright
+    display: inline
+    float: right
+    margin-left: 24px
+    margin-top: 4px
+    border: 1px solid #ccc
+  .aligncenter
+    clear: both
+    display: block
+    margin-left: auto
+    margin-right: auto
+    border: 1px solid #ccc
+  img
+    &.aligncenter
+      clear: both
+      display: block
+      margin-left: auto
+      margin-right: auto
+      border: 1px solid #ccc
+    &.alignleft, &.alignright, &.aligncenter
+      margin-bottom: 12px
+  .wp-caption
+    background: #f1f1f1
+    line-height: 18px
+    margin-bottom: 20px
+    padding: 4px
+    text-align: center
+    img
+      margin: 5px 5px 0
+    p.wp-caption-text
+      color: #888
+      font-size: 12px
+      margin: 5px
+  .wp-smiley
+    margin: 0
+  .gallery
+    margin: 0 auto 18px
+    .gallery-item
+      float: left
+      margin-top: 0
+      text-align: center
+      width: 33%
+    img
+      border: 2px solid #cfcfcf
+    .gallery-caption
+      color: #888
+      font-size: 12px
+      margin: 0 0 12px
+    dl
+      margin: 0
+    img
+      border: 10px solid #f1f1f1
+    br+br
+      display: none
+  .attachment img
+    display: block
+    margin: 0 auto
+  h1, h2, h3, h4, h5, h6
+    margin: 45px 0 10px 0
+  h1
+    font-size: 30px
+    line-height: 35px
+  h2
+    font-size: 26px
+  h3
+    font-size: 22px
+  h4
+    font-size: 20px
+  h5
+    font-size: 18px
+  p
+    margin: 0 0 18px 0
+    line-height: 20px
+  ol
+    list-style: decimal
+    padding-left: 35px
+    margin: 15px 0
+    li ol
+      margin: 0
+  ul
+    list-style: disc
+    padding-left: 20px
+    margin: 15px 0
+    li ul
+      margin: 0
+  li
+    margin: 3px 0
+  blockquote
+    padding: 15px 0 10px 65px
+    background: url(images/bq.png) 20px 0 no-repeat
+    p
+      font-size: 16px
+
+/*** Content ============================================================ **
+
+/* 404 page --------------------------------------
+
+.error_404
+  font-size: 80px
+  line-height: normal
+  color: #000
+  text-align: center
+  padding-bottom: 10px
+  p
+    font-size: 15px
+    font-weight: bold
+    color: #666
+    text-shadow: 1px 1px 1px #fff
+
+.spacer_404
+  clear: both
+  height: 40px
+
+.page_404_set .two_thirds
+  margin-left: 200px
+
+/* instruction elements --------------------------------------
+
+.content p
+  &.alert, &.download, &.info
+    margin: 10px 0 10px 0
+    padding: 9px 10px 9px 40px
+  &.note
+    margin: 10px 0 10px 0
+    padding: 9px 10px 9px 40px
+    margin: 10px 0 10px 0
+  &.alert
+    border-top: 1px solid #f0baa2
+    border-bottom: 1px solid #f0baa2
+    background: #ffd9c8 url(images/i_alert.png) no-repeat 12px 13px
+  &.download
+    border-top: 1px solid #d4ebaf
+    border-bottom: 1px solid #d4ebaf
+    background: #edfcd5 url(images/i_download.png) no-repeat 10px 13px
+  &.info
+    border-top: 1px solid #ccc
+    border-bottom: 1px solid #ccc
+    background: #eeeeee url(images/i_note2.png) no-repeat 12px 13px
+  &.note
+    border-top: 1px solid #efe3ae
+    border-bottom: 1px solid #efe3ae
+    background: #fef6d2 url(images/i_info.png) no-repeat 14px 13px
+    margin: 10px 0 10px 0
+
+/* instruction elements --------------------------------------
+
+/*-----------------------------------------------------------------------------------
+ *	 Widget
+ *-----------------------------------------------------------------------------------
+
+.widget
+  margin-bottom: 35px
+  clear: both
+
+.widget-small
+  width: 130px
+
+.widget h3, .widget-small h3
+  color: #1f2122
+  font-size: 17px
+  font-weight: normal
+  margin-bottom: 10px
+
+.sidebar .widget .latest_posts li
+  margin-bottom: 15px
+
+.widget a, .widget-small a
+  color: #000
+  text-decoration: none
+
+.widget a:hover, .widget-small a:hover
+  text-decoration: underline
+
+.widget p, .textwidget
+  color: #666
+  line-height: 20px
+
+.widget p a, .textwidget a
+  text-decoration: underline
+
+.widget p a:hover, .textwidget a:hover
+  text-decoration: none
+
+.widget li, .widget-small li
+  color: #666
+  margin-bottom: 3px
+
+.widget li ul li
+  padding: 9px 5px 0px 5px
+  margin: 0
+  ul li
+    padding: 9px 5px 0px 5px
+    margin: 0
+
+.widget_tag_cloud a
+  margin: 0 2px
+
+.widget_calendar
+  table
+    width: 100%
+  caption
+    font-size: 13px
+    padding-bottom: 10px
+    text-align: left
+  th, td
+    padding: 5px 0
+    font-size: 13px
+  tbody a
+    text-decoration: underline
+    &:hover
+      text-decoration: none
+
+#calendar_wrap
+  margin-bottom: 20px
+
+#wp-calendar
+  width: 100%
+  caption
+    font-size: 18px
+    padding: 5px 0
+    border-top: 1px solid #ccc
+    border-bottom: 1px solid #ccc
+  thead th
+    text-align: center
+    border-bottom: 1px solid #ccc
+    padding: 5px 0
+  td
+    text-align: center
+    padding: 5px
+  #today
+    background: #ddd
+
+/*-----------------------------------------------------------------------------------
+ *   Bottom Section
+ *-----------------------------------------------------------------------------------
+
+.one_column
+  background: #fff
+  padding: 0 10px
+
+.max_width
+  width: 60%
+  padding: 0 10px
+
+.min_width
+  width: 30%
+  padding: 0 10px
+
+.equal_column
+  width: 46%
+  padding: 0 10px
+
+.three_column
+  width: 30%
+  padding: 0 10px
+
+.foruth_column
+  width: 20%
+  padding: 0 10px
+
+.spacer_3col
+  margin-left: 20px
+
+.spacer_4col
+  margin-left: 38px
+
+.bottom_in .widget p
+  color: #262626
+
+/*-----------------------------------------------------------------------------------
+ *	Messages
+ *-----------------------------------------------------------------------------------
+
+.error_msg
+  padding: 8px 10px
+  text-align: center
+
+.success_msg
+  padding: 8px 10px
+  text-align: center
+  margin-bottom: 30px
+
+.error_msg
+  background: #ffe4e4
+  border-top: 1px solid #ee8686
+  border-bottom: 1px solid #ee8686
+  color: #d70000
+
+.success_msg
+  text-align: center
+  color: #356c1d
+  background: #cee8c3
+  border-top: 1px solid #7ea96b
+  border-bottom: 1px solid #7ea96b
+
+/*-----------------------------------------------------------------------------------
+ *   Calendar css 
+ *-----------------------------------------------------------------------------------
+
+#calendarDiv
+  position: absolute
+  width: 195px
+  padding: 1px
+  font-family: arial
+  font-size: 10px
+  padding-bottom: 20px
+  visibility: hidden
+  span, img
+    float: left
+  .selectBox, .selectBoxOver
+    line-height: 12px
+    padding: 1px
+    cursor: pointer
+    padding-left: 2px
+  td
+    padding: 3px
+    margin: 0px
+    font-size: 10px
+  .selectBox, .selectBoxOver
+    position: relative
+  .topBar
+    height: 16px
+    padding: 2px
+  .activeDay
+  .todaysDate
+    height: 17px
+    line-height: 17px
+    padding: 2px
+    text-align: center
+    position: absolute
+    bottom: 0px
+    width: 201px
+  .monthYearPicker
+    position: absolute
+    left: 0px
+    top: 15px
+    z-index: 1000
+    display: none
+  #monthSelect
+    width: 70px
+  .monthYearPicker div
+    float: none
+    clear: both
+    padding: 1px
+    margin: 1px
+    cursor: pointer
+  .monthYearActive
+  td
+    text-align: right
+    cursor: pointer
+  .topBar
+    img
+      cursor: pointer
+    div
+      float: left
+      margin-right: 1px
+
+/* clearfix -----
+
+.clear:after, .clearfix:after
+  content: "."
+  display: block
+  height: 0
+  clear: both
+  visibility: hidden
+
+.clear, .clearfix
+  display: inline-block
+
+/* Hide from IE Mac \
+
+.clear, .clearfix
+  display: block
+
+/* End hide from IE Mac
+
+.none
+  display: none
+
+/* End Clearfix
+
+.clear
+  clear: both

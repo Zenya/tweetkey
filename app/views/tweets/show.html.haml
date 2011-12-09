@@ -1,0 +1,27 @@
+%h1 Preview
+%table
+  %tr
+    %th Hotkey
+    %th Description
+    %th Category
+    %th Rank
+    %tr
+      %td= @tweet.hotkey
+      %td= @tweet.description
+      %td= @tweet.category.name
+      %td= @tweet.rank
+      %br
+
+= link_to "Rate up", {:controller => "tweets", :action => "vote_up", :id => @tweet}, :remote => true
+%br
+= link_to "Rate down", {:controller => "tweets", :action => "vote_down", :id => @tweet}, :remote => true
+%br
+%br
+= link_to "To favorites", {:controller => "tweets", :action => "to_favorites", :id => @tweet}, :remote => true
+%br
+= link_to "Remove from  favorites", {:controller => "tweets", :action => "remove_from_favorites", :id => @tweet}, :remote => true
+= render "comments/form"      
+= link_to "Edit", :controller => "tweets", :action => "edit", :id => @tweet
+%br
+= link_to "Home", tweets_path
+= @tweet.inspect

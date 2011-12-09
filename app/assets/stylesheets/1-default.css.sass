@@ -1,0 +1,693 @@
+/*----------------------------------------------------------------------------------
+ *	1. body, common classes, structure etc
+ *----------------------------------------------------------------------------------
+
+body
+  background: #f0f2f6
+  color: #626262
+
+a, .widget li a:hover
+  color: #4B6EA9
+  text-decoration: none
+
+a:hover, .widget li a
+  color: #000
+
+.outer
+  background: url(1-default/main_bg111.png) repeat-x left top
+
+/* structure =========================================
+
+.header
+  background: white url(1-default/header_bg.png) repeat-x bottom
+
+/*-----------------------------------------------------------------------------------
+ *	2. Header Styles
+ *-----------------------------------------------------------------------------------
+
+.logo a
+  color: #334f8a
+  text-shadow: 2px 2px 2px #fff
+  &:hover
+    color: #000
+
+.site-description
+  color: #7b7b7b
+
+/*-----------------------------------------------------------------------------------
+ *	3. Navigation & Menus - Top Menu
+ *-----------------------------------------------------------------------------------
+
+.header_right ul li
+  background: url(1-default/menu_seperator.png) no-repeat right
+  a
+    color: #819dcb
+    text-shadow: 1px 1px 1px #fff
+    &:hover
+      color: #4e6b9b
+  ul
+    background: #e7eefc
+    li a
+      background: #e7eefc
+      border-bottom: 1px solid #fff
+      border-right: 1px solid #fff
+      &:hover
+        background: #d2def6
+  &:hover
+    background: #e7eefc
+    ul
+      background: #e7eefc
+  ul li ul
+    background: #e7eefc
+    li ul
+      background: #e7eefc
+  &.current_page_item a, &.current_page_parent a, &.current_page_ancestor a, &.current-header_right-item a, &.current_page_item ul li a, &.current-bcategory-ancestor ul li a
+    background: #e7eefc
+    color: #333
+  &.current_page_item ul li a:hover, &.current-bcategory-ancestor ul li a:hover
+    background: #d2def6
+    color: #333
+  &.current_page_parent ul li
+    &.current_page_item a
+      background: #d2def6
+      color: #333
+    a
+      background: #e7eefc
+      color: #333
+      &:hover
+        background: #d2def6
+        color: #4e6b9b
+    &.current_page_item ul li a
+      background: #e7eefc
+      color: #333
+      &:hover
+        background: #d2def6
+        color: #333
+  &.current_page_ancestor ul li.current_page_parent
+    a
+      background: #d2def6
+      color: #333
+    ul li a
+      background: #e7eefc
+      color: #333
+      &:hover
+        background: #d2def6
+        color: #333
+  ul li
+    &.current_page_parent ul li.current_page_item, &.current_page_ancestor
+      a
+        background: #d2def6
+        color: #333
+      ul li a
+        background: #e7eefc
+        color: #333
+        &:hover
+          background: #d2def6
+          color: #333
+
+/*-----------------------------------------------------------------------------------
+ *	4. Navigation & Menus - Main Menu
+ *-----------------------------------------------------------------------------------
+
+.main_nav_in
+  ul li
+    &:hover li a, &.iehover li a
+      border: 1px solid #6881a9
+      border-top: none
+    a
+      background: url(1-default/seperator.png) no-repeat right 20px
+      color: #fff
+  li:hover li a
+    background: url(1-default/seperator.png) no-repeat right 20px
+    color: #fff
+  ul
+    li
+      &.iehover li a, &:hover li:hover li a, &.iehover li.iehover li a, &:hover li:hover li:hover li a, &.iehover li.iehover li.iehover li a, &:hover li:hover li:hover li:hover li a, &.iehover li.iehover li.iehover li.iehover li a
+        background: url(1-default/seperator.png) no-repeat right 20px
+        color: #fff
+      &.current_page_parent
+        color: #fff
+        background: url(1-default/active_bg.png) top left no-repeat
+    a:hover
+      color: #fff
+      background: url(1-default/active_bg.png) top right no-repeat
+    li
+      &:hover a, &.iehover a, &:hover a:hover
+        color: #fff
+        background: url(1-default/active_bg.png) top right no-repeat
+  li.current_page_ancestor
+    a
+      background: url(1-default/active_bg.png) top left no-repeat
+      color: #fff
+      &:hover
+        background: url(1-default/active_bg.png) top left no-repeat
+        color: #fff
+    ul li.current_page_ancestor
+      a, li.current_page_item a
+        background: url(1-default/active_bg.png) top left no-repeat
+        color: #fff
+        &:hover
+          background: url(1-default/active_bg.png) top left no-repeat
+          color: #fff
+      ul li.current_page_ancestor
+        a
+          background: url(1-default/active_bg.png) top left no-repeat
+          color: #fff
+          &:hover
+            background: url(1-default/active_bg.png) top left no-repeat
+            color: #fff
+        ul li.current_page_ancestor
+          a, ul li.current_page_ancestor a
+            background: url(1-default/active_bg.png) top left no-repeat
+            color: #fff
+            &:hover
+              background: url(1-default/active_bg.png) top left no-repeat
+              color: #fff
+  ul li
+    &:hover li
+      a:hover, &:hover a
+        background: url(1-default/active_bg.png) top left no-repeat
+        color: #fff
+    &.iehover li
+      a:hover, &.iehover a
+        background: url(1-default/active_bg.png) top left no-repeat
+        color: #fff
+    &:hover li:hover li
+      a:hover, &:hover a
+        background: url(1-default/active_bg.png) top left no-repeat
+        color: #fff
+    &.iehover li.iehover li
+      a:hover, &.iehover a
+        background: url(1-default/active_bg.png) top left no-repeat
+        color: #fff
+    &:hover li:hover li:hover li
+      a:hover, &:hover a
+        background: url(1-default/active_bg.png) top left no-repeat
+        color: #fff
+    &.iehover li.iehover li.iehover li
+      a:hover, &.iehover a
+        background: url(1-default/active_bg.png) top left no-repeat
+        color: #fff
+    &:hover li:hover li:hover li:hover li:hover a, &.iehover li.iehover li.iehover li.iehover li.iehover a, &:hover li:hover li:hover li:hover li a:hover, &.iehover li.iehover li.iehover li.iehover li a:hover
+      background: url(1-default/active_bg.png) top left no-repeat
+      color: #fff
+  li
+    &:hover, &.iehover, &.current_page_item, &.iehover, &.current_page_ancestor, &.current-cat
+      background: url(1-default/active_bg.png) top left no-repeat
+      color: #fff
+    &:hover a, &.iehover a, &.current_page_item a, &.current-cat a
+      color: #fff
+      background: url(1-default/active_bg.png) top right no-repeat
+    &.current_page_ancestor a
+      color: #fff
+      background: url(1-default/active_bg.png) top right no-repeat
+      &:hover
+        color: #fff
+        background: url(1-default/active_bg.png) top right no-repeat
+    &.current_page_parent a
+      color: #fff
+      background: url(1-default/active_bg.png) top right no-repeat
+    a
+      color: #fff
+      background: url(1-default/active_bg.png) top right no-repeat
+      &:hover
+        color: #fff
+        background: url(1-default/active_bg.png) top right no-repeat
+    ul li
+      ul li.current_page_parent a, &.current_page_ancestor a, ul li.current_page_parent a:hover, &.current_page_ancestor a:hover
+        background-position: -5px 0 !important
+  ul li
+    &:hover li
+      a:hover, &:hover a
+        background: #2b3c57
+        color: #fff
+    &.iehover li
+      a:hover, &.iehover a
+        background: #2b3c57
+        color: #fff
+    &:hover li:hover li
+      a:hover, &:hover a
+        background: #2b3c57
+        color: #fff
+    &.iehover li.iehover li
+      a:hover, &.iehover a
+        background: #2b3c57
+        color: #fff
+    &:hover li:hover li:hover li
+      a:hover, &:hover a
+        background: #2b3c57
+        color: #fff
+    &.iehover li.iehover li.iehover li
+      a:hover, &.iehover a
+        background: #2b3c57
+        color: #fff
+    &:hover li:hover li:hover li:hover li:hover a, &.iehover li.iehover li.iehover li.iehover li.iehover a, &:hover li:hover li:hover li:hover li a:hover, &.iehover li.iehover li.iehover li.iehover li a:hover
+      background: #2b3c57
+      color: #fff
+    &:hover li
+      a
+        background: #425a82
+        color: #fff
+      &:hover li
+        a
+          background: #425a82
+          color: #fff
+        &:hover li
+          a, :hover li a
+            background: #425a82
+            color: #fff
+
+/* Top level
+
+/* Root Menu Hover Persistence
+
+/* Remembers the parent page of the current page -------------------------------------
+
+/* IE verticle Specific -------------------------------------
+/* 2nd Menu Hover Persistence
+
+/* IE verticle Specific -------------------------------------
+/* 2nd Menu Hover Persistence
+
+/*-----------------------------------------------------------------------------------
+ *	5. Main Content Styles
+ *-----------------------------------------------------------------------------------
+
+.content_top
+  background: url(1-default/content_top.png) no-repeat left top
+
+.content_bg
+  background: url(1-default/content_bg.png) repeat-y left
+
+.content_bottom
+  background: url(1-default/content_bottom.png) no-repeat left bottom
+
+.content_top_full, .content_full .content_top
+  background: url(1-default/content_top_full.png) no-repeat left top
+
+.content_bg_full, .content_full .content_bg
+  background: url(1-default/content_bg_full.png) repeat-y left
+
+.content_bottom_full, .content_full .content_bottom
+  background: url(1-default/content_bottom_full.png) no-repeat left bottom
+
+h1, h2, h3, h4, h5, h6
+  color: #101010
+
+.post-meta h1
+  border-bottom: 1px solid #d6dce8
+
+.content .post-meta
+  color: #828282
+
+.post .post-meta a, .entry .post-meta a
+  color: #353535
+
+.post .post-meta a:hover, .entry .post-meta a:hover
+  color: #4b6ea9
+
+.post-content
+  h1, h2, h3, h4, h5
+    color: #101010
+
+.detail-title h1
+  color: #101010
+
+.post-content a
+  color: #4B6EA9
+  &:hover
+    color: #222
+
+.vote_box a:hover
+  color: #222
+
+.post-content blockquote
+  background: #f7f7f7 url(1-default/quote_left.png) no-repeat 30px 20px
+  border-top: 6px solid #f0f0f0
+  p
+    background: url(1-default/quote_right.png) no-repeat 590px 20px
+
+.share_post
+  border-top: 4px solid #eaeae9
+  border-bottom: 1px solid #eaeae9
+
+.vote_box
+  border-top: 1px solid #e6e6e6
+  border-bottom: 1px solid #e6e6e6
+  background: #f8f8f8
+  label, a
+    color: #334f8a
+  a
+    img
+      background: #f5f5f5
+      border: 1px solid #c7c7c7
+    &:hover img
+      border: 1px solid #777
+
+.post a.hype_link, .b_like_disable, .post a:hover.hype_link
+  background: #4B6EA9
+  color: #fff
+
+.span_currentvote
+  background: #324A73
+  color: #fff
+
+.span_plusvote, .span_minusvote
+  background: #000
+  color: #fff
+
+.welcome_box
+  background: #f5f5f6
+  border: 1px solid #e1e1e1
+
+/*-----------------------------------------------------------------------------------
+ *	6. Post Page Navigation 
+ *-----------------------------------------------------------------------------------
+/* single page post navigation ---------------------------
+
+.post-navigation
+  border-top: 1px solid #d6dce8
+  border-bottom: 1px solid #d6dce8
+  a
+    color: #334f8a
+    &:hover
+      color: #222
+
+a
+  &.post-prev
+    background: url(1-default/i_previous.png) no-repeat left
+  &:hover.post-prev
+    background: url(1-default/i_previous_h.png) no-repeat left
+  &.post-next
+    background: url(1-default/i_next.png) no-repeat right
+  &:hover.post-next
+    background: url(1-default/i_next_h.png) no-repeat right
+
+/* post pagination ---------------------------
+
+.Navi
+  .on
+    background: #4b6ea9
+    color: #fff
+  a
+    background: #f1f1f1
+    color: #919191
+    &:hover
+      background: #4b6ea9
+      color: #fff
+
+/*-----------------------------------------------------------------------------------
+ *	7. Comments
+ *-----------------------------------------------------------------------------------
+
+.comments h3
+  color: #334f8a
+
+.comment
+  background: #f4f6fa url(1-default/comment_line.png) repeat-y 99px 0px
+  border: 1px solid #d6dae4 !important
+
+.comment-meta
+  border-bottom: 1px solid #d6dae4
+  color: #818181
+  a
+    color: #334f8a
+    &:hover
+      color: #222
+
+.comment .avatar
+
+a.comment-reply-link
+  background: #91a7ca url(1-default/reply_arrow.png) no-repeat 47px
+  color: #fff
+  border-bottom: 1px solid #8394af
+  &:hover
+    background: #7084a2 url(1-default/reply_arrow.png) no-repeat 47px
+    color: #fff
+    border-bottom: 1px solid #8394af
+
+/* comment form -----------------------
+
+#respond h3
+  border-bottom: 1px solid #e5e5e5
+
+.comments p.commpadd
+  .author
+    background: url(1-default/i_user.png) no-repeat left top
+  .email2
+    background: url(1-default/i_email.png) no-repeat left top
+  .site
+    background: url(1-default/i_web.png) no-repeat left top
+  .comment2
+    background: url(1-default/i_comment2.png) no-repeat left top
+  input
+    background: url(1-default/textfieldbg.png) no-repeat left top
+    border: none
+    color: #a6a6a6
+
+#respond textarea
+  background: url(1-default/textarea.png) no-repeat left top
+  color: #a6a6a6
+
+.comments .comment .text-right p a.comment-reply-link
+  background: url(1-default/buttonbg.png) repeat-x left top
+
+#submit
+  background: url(1-default/submit_btn.png) repeat-x
+  color: #fff
+  text-shadow: 1px 1px 1px #40577e
+  &:hover
+    background: url(1-default/submit_btn_h.png) repeat-x
+
+/*-----------------------------------------------------------------------------------
+ *	 8. Widget
+ *-----------------------------------------------------------------------------------
+
+.widget h3, .widget-small h3
+  color: #fff
+  text-shadow: 1px 1px 1px #7b8eac
+  background: url(1-default/title_bg.png) no-repeat
+  border-bottom: none
+
+.article_btn
+  color: #4c6fa9
+  background: url(1-default/submit_article.png) no-repeat
+  text-shadow: 1px 1px 1px #fff
+  &:hover
+    background: url(1-default/submit_article_h.png) no-repeat
+
+.submit_article small
+  color: #b4c4de
+  text-shadow: 1px 1px 1px #466395
+
+/* login widget -----------
+
+.login_widget
+  .form_row .textfield
+    border: 1px solid #c7ccd6
+    border-top: 2px solid #b3b3b3
+    border-left: 2px solid #b3b3b3
+    color: #626262
+  .b_signin
+    color: #fff
+    text-shadow: 1px 1px 1px #384b6c
+    background: url(1-default/btn_login.png) no-repeat right top
+    &:hover
+      background: url(1-default/btn_login_h.png) no-repeat right top
+  .b_forgotpass
+    color: #fff
+    text-shadow: 1px 1px 1px #384b6c
+    background: url(1-default/btn_login.png) repeat-x right top
+    &:hover
+      background: url(1-default/btn_login_h.png) no-repeat right top
+
+#testimonials blockquote
+  background: #F0F2F6
+
+#contact_widget_frm .b_submit, #contact_frm .b_submit, #advancedsearch .adv_submit
+  color: #fff
+  text-shadow: 1px 1px 1px #384b6c
+  background: url(1-default/btn_login.png) repeat-x right top
+
+#contact_widget_frm .b_submit:hover, #contact_frm .b_submit:hover, #advancedsearch .adv_submit:hover
+  background: url(1-default/btn_login_h.png) no-repeat right top
+
+.sidebar .latest_posts li, #twitter_update_list li
+  border-bottom: 2px solid #fff
+
+.sidebar .latest_posts li:last-child, #twitter_update_list li:last-child
+  border-bottom: none
+
+.b_twitter
+  background: url(1-default/i_twitter.png) no-repeat left top
+
+.latest_posts li, .popular li, #twitter li
+  border-bottom: 2px solid #fff
+
+/* login form color & bg
+
+.login_form_l
+  border: 3px double #ccc
+  h4
+
+.registration_form_box h4
+
+.login_form_l .form_row label, .registration_form_box .form_row label
+  color: #4a4a4a
+
+.login_form_l .form_row .textfield, .registration_form_box .form_row .textfield
+  border: 1px double #ccc
+  background: #fff
+
+.login_form_l a
+  color: #CC4B3E
+  font-size: 12px
+  &:hover
+    color: #333
+
+.upload_img input
+  border: 1px solid #ccc
+
+.error_msg
+  background: #ffe4e4
+  border-top: 1px solid #ee8686
+  border-bottom: 1px solid #ee8686
+  color: #d70000
+
+.success_msg
+  text-align: center
+  color: #356c1d
+  background: #cee8c3
+  border-top: 1px solid #7ea96b
+  border-bottom: 1px solid #7ea96b
+
+.login_form_l .b_signin_n
+  color: #fff
+  border: none
+  text-shadow: 1px 1px 1px #384b6c
+  background: url(1-default/btn_login.png) repeat-x right top
+  &:hover
+    background: url(1-default/btn_login_h.png) no-repeat right top
+
+/* registration color
+
+#reg_passmail
+  color: #a8a79f
+
+.registration_form_box
+  border: 3px double #ccc
+  .b_registernow
+    color: #fff
+    border: none
+    text-shadow: 1px 1px 1px #384b6c
+    background: url(1-default/btn_login.png) repeat-x right top
+    &:hover
+      background: url(1-default/btn_login_h.png) no-repeat right top
+
+/*-----------------------------------------------------------------------------------
+ *   9. Bottom Section
+ *-----------------------------------------------------------------------------------
+
+.bottom .widget h3
+  color: #4B6EA9
+  background: none
+  text-shadow: 1px 1px 1px #fff
+
+.one_column
+  background: #fff
+
+/*-----------------------------------------------------------------------------------
+ *	 10. Footer
+ *-----------------------------------------------------------------------------------
+
+.footer_in
+  color: #959595
+  a
+    color: #959595
+
+/*-----------------------------------------------------------------------------------
+ *	17. Tabber  Style start
+ *-----------------------------------------------------------------------------------
+
+.tabbernav
+  background: url(1-default/tab_bg.png) repeat-x bottom
+  li
+    a
+      color: #9aacc9
+      &:hover
+        color: #3b5998
+    &.tabberactive
+      background: url(1-default/tab_active.png) repeat-x
+      color: #3b5998
+      border: 1px solid #c9d4ea
+      border-bottom: 0px
+      a
+        color: #3b5998
+        background: none
+        &:hover
+          color: #3b5998
+
+.post a
+  color: #4b6ea9
+  &:hover
+    color: #324a73
+
+.post-category
+  background: url(1-default/i_folder.png) no-repeat 0px 2px
+
+.single_comments a
+  background: url(1-default/i_comment.png) no-repeat 0px 3px
+  &:hover
+    background: url(1-default/i_comment.png) no-repeat 0px 3px
+
+.single-website a
+  background: url(1-default/i_website.png) no-repeat 0px 3px
+
+.post-tags
+  background: url(1-default/i_tag.png) no-repeat 0px 2px
+
+.at15t_compact
+  background: url(1-default/i_share.png) no-repeat 0px 11px !important
+
+.post-meta
+  .edit a
+    background: url(1-default/i_edit.png) no-repeat 0px 2px
+    color: #090
+  .delete a
+    background: url(1-default/i_delete.png) no-repeat 0px 2px
+    color: #C00
+
+.published
+  background: url(1-default/i_checkmark.png) no-repeat 0px 0px
+
+.blog_listing a.hype_lnk, a.hype_lnk
+  color: #fff
+
+/*-----------------------------------------------------------------------------------
+ *	 18. Add listing Form 
+ *-----------------------------------------------------------------------------------
+
+.button
+  color: #fff
+  border: none
+  text-shadow: 1px 1px 1px #384b6c
+  background: url(1-default/btn.png) repeat-x right bottom
+  &:hover
+    background: url(1-default/btn_h.png) no-repeat right bottom
+
+.b_cancel, .b_publish, .entry .post-content a.b_goback
+  color: #fff
+  border: none
+  text-shadow: 1px 1px 1px #384b6c
+  background: url(1-default/btn_login.png) repeat-x right bottom
+  &:hover
+    background: url(1-default/btn_login_h.png) no-repeat right bottom
+
+.b_cancel:hover
+  background: url(1-default/btn_login_h.png) no-repeat right bottom
+
+/*
+ *a.hype_lnk .number{ background:#324a73; }
+ *a.hype_lnk .hype{ background:#4b6ea9; color:#fff }
+ *a:hover.hype_lnk .hype{ background:#344e7b; color:#fff; }
+ *a:hover.hype_lnk:hover  .number{ background:#000; color:#fff; }

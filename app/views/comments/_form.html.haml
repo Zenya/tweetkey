@@ -1,0 +1,12 @@
+%h2 Comments
+- for comment in @tweet.comments
+  %h3= comment.username
+  %p= comment.content
+//  = link_to("Destroy", "http://www.example.com", :method => :delete, :confirm => "Are you sure?")
+%h2 New Comment
+= form_for [@tweet, Comment.new] do |f|
+  %p
+    = hidden_field :comment, :name, :value => current_user
+  %p= f.text_area :content, :rows => 10
+  %p= f.submit
+
