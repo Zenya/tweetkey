@@ -12,7 +12,9 @@ gem 'haml'
 gem 'compass'
 
 gem 'devise'
-gem 'omniauth',  "~> 0.3.2"
+gem 'omniauth'
+gem 'omniauth-facebook'
+
 gem 'jquery-rails'
 gem "paperclip", "~> 2.4"
 gem 'bson_ext', '~> 1.5.0.rc0'

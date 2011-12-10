@@ -38,8 +38,9 @@ class Tweet
   end
 
   def vote_up(user, author)
+    @a = User.where(:email => author).find()
     if self.voter_up.include?(user.id)
-      abort("Yoy have already voted")
+      abort(@a.inspect)
     elsif self.voter_down.include?(user.id)
       self.voter_down.delete(user.id)
       self.voter_up << user.id
@@ -48,6 +49,7 @@ class Tweet
     else
       self.voter_up << user.id
       self.rank += 1
+    #  @a.karma += 5
       self.save
 
     end
@@ -67,6 +69,7 @@ class Tweet
       self.voter_down << user.id
       self.rank -= 1
       user.karma -= 1
+      @a.karma -= 2
       user.save
       self.save
     end

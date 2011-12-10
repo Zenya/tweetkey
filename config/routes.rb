@@ -20,9 +20,9 @@ Tweetkey::Application.routes.draw do
     resources :comments
   end
 
-  devise_for :users
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth _callbacks" }
 
-  match '/auth/:provider/callback', to: 'devise/sessions#create'
+#  match '/auth/:provider/callback', to: 'devise/sessions#create'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

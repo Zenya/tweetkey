@@ -10,6 +10,7 @@
 
     = render 'devise/menu/registration_items'
     = render 'devise/menu/login_items'
+    = link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook)
     = yield
 /*    %br
 //    - if user_signed_in?
