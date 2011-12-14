@@ -1,5 +1,3 @@
-= javascript_include_tag :defaults
-
 %h1 Preview
 %table
   %tr
@@ -13,7 +11,8 @@
       %td= @tweet.category.name
       %td= @tweet.rank
       %br
-= render "/tweets/rank"
+#rank
+  = render "_rank"
 = link_to "Rate up", {:controller => "tweets", :action => "vote_up", :id => @tweet, :rate => "up"}, :remote => true
 %br
 = link_to "Rate down", {:controller => "tweets", :action => "vote_down", :id => @tweet, :rate => "down"}, :remote => true

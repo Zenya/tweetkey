@@ -24,6 +24,11 @@ class TweetsController < ApplicationController
 
   def show
     @tweet = Tweet.find(params[:id])
+    if @tweet.in_favorites.include?(current_user.id)
+      @todo = "remove"
+    else
+      @todo = "add"
+    end
   end
 
   def edit
@@ -38,31 +43,27 @@ class TweetsController < ApplicationController
   end
 
   def vote_up
-    @a = Tweet.find(params[:id])
-    @au = @a.author
-      respond_to do |format|
-      format.json { render :json => Tweet.find(params[:id]).vote_up(current_user, @au) }
-      end
+    @tweet = Tweet.find(params[:id])
+    @author = @tweet.author
+    @tweet.vote_up(current_user, @author) 
+    respond_to do |format|
+#      format.json { render :json => }
+      format.js { render :partial => "/tweets/rank" }
+    end
   end
-
 
   def vote_down
-    @a = Tweet.find(params[:id])
-    @au = @a.author
+    @tweet = Tweet.find(params[:id])
+    @author = @tweet.author
       respond_to do |format|
-      format.json { render :json => Tweet.find(params[:id]).vote_down(current_user, @au) }
+      format.json { render :json => Tweet.find(params[:id]).vote_down(current_user, @author) }
       end
   end
 
-  def to_favorites
-      respond_to do |format|
-      format.json { render :json => Tweet.find(params[:id]).to_favorites(current_user) }
-      end
-  end
 
-  def remove_from_favorites
-      respond_to do |format|
-      format.json { render :json => Tweet.find(params[:id]).remove_from_favorites(current_user) }
-      end
+  def favorites
+    respond_to do |format|
+      format.json { render :json => Tweet.find(params[:id]).favorites(current_user, params[:todo]) }
+    end
   end
 end

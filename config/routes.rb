@@ -13,8 +13,7 @@ Tweetkey::Application.routes.draw do
 
   match '/tweets/vote_up'
   match '/tweets/vote_down'
-  match '/tweets/to_favorites'
-  match '/tweets/remove_from_favorites'
+  match '/tweets/favorites'
   
   resources :tweets do
     resources :comments
