@@ -1,7 +1,9 @@
 = @tweet.rank
-- @class = @tweet.voter_up.include?(current_user.id) ? "used" : "not_used"
-= link_to "▲", {:controller => "tweets", :action => "rank", :id => @tweet, :rate => "up"}, :class => @class, :remote => true
-%br
-- @class = @tweet.voter_down.include?(current_user.id) ? "used" : "not_used"
-= link_to "▼", {:controller => "tweets", :action => "rank", :id => @tweet, :rate => "down"}, :class => @class, :remote => true
-%br
+- if user_signed_in?
+  - @class = @tweet.voter_up.include?(current_user.id) ? "used" : "not_used"
+  = link_to "▲", {:controller => "tweets", :action => "rank", :id => @tweet, :rate => "up"}, :class => @class, :remote => true
+  %br
+  - @class = @tweet.voter_down.include?(current_user.id) ? "used" : "not_used"
+  = link_to "▼", {:controller => "tweets", :action => "rank", :id => @tweet, :rate => "down"}, :class => @class, :remote => true
+  %br
+

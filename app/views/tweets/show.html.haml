@@ -19,6 +19,5 @@
 %br
 = render "comments/form"      
 = link_to "Edit", :controller => "tweets", :action => "edit", :id => @tweet
-%br
+|
 = link_to "Home", tweets_path
-= @tweet.inspect

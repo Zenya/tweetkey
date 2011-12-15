@@ -5,15 +5,9 @@ Tweetkey::Application.routes.draw do
 
   get "/users/show"
 
-  resources :articles
-
   root :to => 'tweets#index'
 
-  resources :posts
-
   match '/tweets/rank'
-  match '/tweets/vote_up'
-  match '/tweets/vote_down'
   match '/tweets/favorites'
   
   resources :tweets do

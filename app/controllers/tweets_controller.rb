@@ -25,7 +25,7 @@ class TweetsController < ApplicationController
   def show
     @tweet = Tweet.find(params[:id])
     if user_signed_in?
-    @todo = @tweet.in_favorites.include?(current_user.id) ? "remove" : "add"
+      @todo = @tweet.in_favorites.include?(current_user.id) ? "remove" : "add"
     end
   end
 
@@ -37,6 +37,16 @@ class TweetsController < ApplicationController
     @tweet = Tweet.find(params[:id])
     if @tweet.update_attributes(params[:tweet])
       redirect_to tweet_path(@tweet)
+    end
+  end
+
+  def destroy
+    @tweet = Tweet.find(params[:id])
+    @tweet.destroy
+
+    respond_to do |format|
+      format.html { redirect_to tweets_url }
+      format.json { head :ok }
     end
   end
 

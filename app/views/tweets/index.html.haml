@@ -12,7 +12,7 @@
       %td= t.hotkey
       %td= t.description
       %td= link_to 'Show', t 
-      %td= link_to 'Destroy', t, confirm: 'Are you sure?', method: :delete
+      %td= link_to 'Destroy', t, :confirm => 'Are you sure?', :method => :delete
 
 
 = link_to 'New tweetkey', new_tweet_path
