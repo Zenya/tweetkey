@@ -11,6 +11,7 @@ Tweetkey::Application.routes.draw do
 
   resources :posts
 
+  match '/tweets/rank'
   match '/tweets/vote_up'
   match '/tweets/vote_down'
   match '/tweets/favorites'

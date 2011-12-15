@@ -1,5 +1,5 @@
 class TweetsController < ApplicationController
-  before_filter :authenticate_user!, :except => [:show, :index]
+  before_filter :authenticate_user!, :except => [:index, :show]
 
   def index
     @tweets = Tweet.all
@@ -24,10 +24,8 @@ class TweetsController < ApplicationController
 
   def show
     @tweet = Tweet.find(params[:id])
-    if @tweet.in_favorites.include?(current_user.id)
-      @todo = "remove"
-    else
-      @todo = "add"
+    if user_signed_in?
+    @todo = @tweet.in_favorites.include?(current_user.id) ? "remove" : "add"
     end
   end
 
@@ -42,24 +40,14 @@ class TweetsController < ApplicationController
     end
   end
 
-  def vote_up
+  def rank
     @tweet = Tweet.find(params[:id])
     @author = @tweet.author
-    @tweet.vote_up(current_user, @author) 
+      @tweet.vote(current_user, @author, params[:rate]) 
     respond_to do |format|
-#      format.json { render :json => }
-      format.js { render :partial => "/tweets/rank" }
+      format.js
     end
   end
-
-  def vote_down
-    @tweet = Tweet.find(params[:id])
-    @author = @tweet.author
-      respond_to do |format|
-      format.json { render :json => Tweet.find(params[:id]).vote_down(current_user, @author) }
-      end
-  end
-
 
   def favorites
     respond_to do |format|

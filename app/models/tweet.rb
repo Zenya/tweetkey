@@ -35,49 +35,47 @@ class Tweet
     self.in_favorites.count
   end
 
-  def vote_up(user, author)
+  def vote(user, author, rate)
     @author = User.where(:email => author).to_a
     if self.voter_up.include?(user.id)
-      abort("You have already voted")
+      if rate == "up"
+        self.voter_up.delete(user.id)
+        @author[0].karma -= 5
+        self.rank -= 1
+      else rate == "down"
+        self.voter_down << user.id
+        self.voter_up.delete(user.id)
+        @author[0].karma -= 7
+        self.rank -= 2
+        user.karma -= 1
+      end
     elsif self.voter_down.include?(user.id)
-      self.voter_down.delete(user.id)
-      self.voter_up << user.id
-      self.rank += 1
-      @author[0].karma += 7
-      @author[0].save
-      self.save
+      if rate == "down"
+        self.voter_down.delete(user.id)
+        @author[0].karma += 2
+        user.karma += 1
+        self.rank += 1
+      else rate == "up"
+        self.voter_down.delete(user.id)
+        self.voter_up << user.id
+        @author[0].karma += 7
+        self.rank += 2
+      end
     else
-      self.voter_up << user.id
-      self.rank += 1
-      @author[0].karma += 5
-      @author[0].save
-      self.save
-
-    end
+      if rate == "up"
+        self.voter_up << user.id
+        @author[0].karma += 5
+        self.rank += 1
+      else
+        self.voter_down << user.id
+        @author[0].karma -= 2
+        self.rank -= 1
+        user.karma -= 1
+      end
+    end 
+    self.save
+    @author[0].save
+    user.save
   end
-
-  def vote_down(user, author)
-    @author = User.where(:email => author).to_a
-    if self.voter_down.include?(user.id)
-      abort("You have already voted")
-    elsif self.voter_up.include?(user.id)
-      self.voter_up.delete(user.id)
-      self.voter_down << user.id
-      self.rank -= 1
-      user.karma -=1
-      @author[0].karma -= 7
-      @author[0].save
-      user.save
-      self.save
-    else
-      self.voter_down << user.id
-      self.rank -= 1
-      user.karma -=1
-      @author[0].karma -= 2
-      @author[0].save
-      user.save
-      self.save
-    end
-
-  end
-end 
+  logger.debug @author
+end
