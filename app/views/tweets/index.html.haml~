@@ -1,0 +1,26 @@
+%ul.tabbernav
+  %li.tabberactive
+    %a{:href => "javascript:void(null);", :title => "Latest Posts"} Latest Posts
+  %li
+    %a{:href => "javascript:void(null);", :title => "Popular Posts"} Popular Posts
+  %li
+    %a{:href => "javascript:void(null);", :title => "Recent Comment"} Recent Comment
+
+%h1 Listing tweetkeys
+%table
+  %tr
+    %th Rank
+    %th Category
+    %th Hotkey
+    %th Description
+  - @tweets.each do |t|
+    %tr
+      %td= t.rank
+      %td= t.category.name
+      %td= t.hotkey
+      %td= t.description
+      %td= link_to 'Show', t 
+      %td= link_to 'Destroy', t, :confirm => 'Are you sure?', :method => :delete
+
+
+= link_to 'New tweetkey', new_tweet_path

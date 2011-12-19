@@ -1,0 +1,25 @@
+
+%h1 Preview
+%table
+  %tr
+    %th Hotkey
+    %th Description
+    %th Category
+    %th Rank
+    %tr
+      %td= @tweet.hotkey
+      %td= @tweet.description
+      %td= @tweet.category.name
+      %td= @tweet.rank
+      %br
+
+#rank
+  = render "info"
+%br
+= link_to "Favorites", {:controller => "tweets", :action => "favorites", :id => @tweet, :todo => @todo}, :remote => true
+%br
+= render "comments/form"      
+= link_to "Edit", :controller => "tweets", :action => "edit", :id => @tweet
+|
+= link_to "Home", tweets_path
+= yield
