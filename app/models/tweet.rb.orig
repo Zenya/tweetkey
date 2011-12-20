@@ -2,7 +2,11 @@ class Tweet
   include Mongoid::Document
   include Mongoid::Timestamps
 
+<<<<<<< HEAD
+  field :title, type: String
+=======
   field :name, type: String
+>>>>>>> 2b1e64ebc5adf16283b42924a24d552ca7cff656
   field :description, type: String
   field :author, type: String
   field :category_id, type: String

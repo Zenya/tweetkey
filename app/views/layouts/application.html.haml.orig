@@ -23,6 +23,7 @@
           .content.left
             .content_top
             .content_bg
+<<<<<<< HEAD
               #loop.list.clear
                 #tab1.tabberlive
                   %ul.tabbernav
@@ -304,6 +305,9 @@
                               |
                               %a{:href => "http://templatic.com/demos/plusone/listing/the-allen-solly-bags/#comment-103"} Comment
             / content bg #end
+=======
+              = yield
+>>>>>>> 2b1e64ebc5adf16283b42924a24d552ca7cff656
             .content_bottom
           / content end
           .sidebar.right

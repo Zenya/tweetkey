@@ -2,9 +2,9 @@
   = f.label :Category
   = f.collection_select :category, Category.all, :id, :name, :prompt => true
   %br
-  = f.label :Hotkey
+  = f.label :Name
   %br
-  = f.text_field :hotkey
+  = f.text_field :name
   %br
   = f.label :Description
   %br 

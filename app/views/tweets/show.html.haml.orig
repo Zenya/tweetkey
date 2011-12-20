@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 %h1 Preview
 %table
 %tr
@@ -12,6 +14,7 @@
     %td= @tweet.rank
     %br
 
+>>>>>>> 2b1e64ebc5adf16283b42924a24d552ca7cff656
 #rank
 = render "info"
 %br
