@@ -1,0 +1,9 @@
+!= "$('#loop').append('#{j render(@tweets)}');"
+/- if @tweets.next
+/  != "$('.pagination').replaceWith('#{j paginate(@tweets)}');"
+/- else
+/  != "$('.pagination').remove();"
+/- sleep 1
+
+/= render(@tweets)
+/= paginate(@tweets)

@@ -25,10 +25,11 @@ gem 'russian'
 gem 'unicorn'
 #gem 'dalli'
 #gem 'hoptoad_notifier'
+#gem 'will_paginate', '2.3.16'
 
 gem 'formtastic'
 #gem 'meta_search', '~> 1.1.0.pre2'
-#gem 'kaminari'
+gem 'kaminari'
 #gem 'addressable', :require => 'addressable/uri'
 
 #gem 'rmagick'

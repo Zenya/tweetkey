@@ -14,11 +14,12 @@
     #_atssh{:style => "visibility: hidden; height: 1px; width: 1px; position: absolute; z-index: 100000; "}
     .wrapper
       .header.clear
-      / header #end
+        / header #end
+
       .outer
         / Container
         #container.clear
-          %script{:language => "javascript", :src => "http://templatic.com/demos/plusone/wp-content/themes/plusone/js/tabber.js", :type => "text/javascript"}
+          = javascript_include_tag "http://templatic.com/demos/plusone/wp-content/themes/plusone/js/tabber.js"
           .content.left
             .content_top
             .content_bg
@@ -26,129 +27,17 @@
                 #tab1.tabberlive
                   %ul.tabbernav
                     %li.tabberactive
-                      %a{:href => "javascript:void(null);", :title => "Последние"} Последние
+                      =link_to "Последние"
                     %li
-                      %a{:href => "javascript:void(null);", :title => "Лучшие"} Лучшие
+                      =link_to "Лучшие"
                     %li
-                      %a{:href => "javascript:void(null);", :title => "Обсуждаемые"} Обсуждаемые
+                      =link_to "Обсуждаемые"
                   .tabbertab{:title => ""}
                     %h2 Latest Posts
                     #loop.list.clear
-                      #post_143.post-143.listing.type-listing.status-publish.hentry.post
-                        .left
-                          #addlike143.vote
-                            %span.span_currentvote 7
-                        / Post Title Condition for Post Format
-                        %h3
-                          %a{:href => "http://templatic.com/demos/plusone/listing/cute-magazine-alert/"}
-                            Cute Magazine Alert
-                        / Post Title Condition for Post Format
-                        .post-meta
-                          by
-                          %span.post-author
-                            %a{:href => "http://templatic.com/demos/plusone/author/templatic-test/", :title => "Posts by templatic"}
-                              templatic
-                          on
-                          %span.post-date
-                            May 21, 2011
-                          %span.post-category
-                            Article Categories:
-                            %a{:href => "http://templatic.com/demos/plusone/lcategory/looks/"} Looks
-                            and
-                            = succeed "." do
-                              %a{:href => "http://templatic.com/demos/plusone/lcategory/outstanding/"} Outstanding
-                          %span.post-tags-none
-                            Article Tags:
-                            = succeed "." do
-                              %a{:href => "http://templatic.com/demos/plusone/ltags/zara/"} zara
-                        / post meta #end
-                        / Post Content Condition for Post Format
-                        .post-content
-                          I am always keeping an eye out for new online magazines. Dujour isnt strictly an online magazine (it is available in print too, which is great because you know how
-                          %a.read_more{:href => "http://templatic.com/demos/plusone/listing/cute-magazine-alert/", :title => ""} Read More →
-                        .post-meta.clear-meta
-                          %span.post-category-none
-                            Article Categories:
-                            %a{:href => "http://templatic.com/demos/plusone/lcategory/looks/"} Looks
-                            and
-                            = succeed "." do
-                              %a{:href => "http://templatic.com/demos/plusone/lcategory/outstanding/"} Outstanding
-                          %span.post-tags
-                            Article Tags:
-                            = succeed "." do
-                              %a{:href => "http://templatic.com/demos/plusone/ltags/zara/"} zara
-                          %span.single_comments
-                            %a.comments_popup_link{:href => "http://templatic.com/demos/plusone/listing/cute-magazine-alert/#respond", :title => "Comment on Cute Magazine Alert"} 0
-                          .post-share
-                            .addthis_toolbox.addthis_default_style
-                              %a.addthis_button_compact.sharethis.at300m{:href => "http://www.addthis.com/bookmark.php?v=250&username=xa-4c873bb26489d97f"}
-                                %span.at300bs.at15nc.at15t_compact>
-                                Share
-                              .atclear
-                          %span.post-view
-                            Views :
-                            %strong 5565
-                          %span.single-website
-                            %a{:href => "http://www.technostarry.com"} Website
-                        / post meta #end
-                        / Post Content Condition for Post Format
-                      #post_134.post-134.listing.type-listing.status-publish.hentry.post
-                        .left
-                          #addlike134.vote
-                            %span.span_currentvote 10
-                            %span.b_like_disable Hype
-                        / Post Title Condition for Post Format
-                        %h3
-                          %a{:href => "http://templatic.com/demos/plusone/listing/sweet-serenity/"}
-                            Sweet Serenity
-                        / Post Title Condition for Post Format
-                        .post-meta
-                          by
-                          %span.post-author
-                            %a{:href => "http://templatic.com/demos/plusone/author/saqib-4343/", :title => "Posts by Saqib"}
-                              Saqib
-                          on
-                          %span.post-date
-                            May 21, 2011
-                          %span.post-category
-                            Article Categories:
-                            = succeed "." do
-                              %a{:href => "http://templatic.com/demos/plusone/lcategory/lifestyle/"} Lifestyle
-                        / post meta #end
-                        / Post Content Condition for Post Format
-                        .post-content
-                          My family had such a lovely evening tonight…gorgeous weather and a relaxing dinner outside, Spring and Fall nights are my favorite. With our busy lives it is easy to get
-                          %a.read_more{:href => "http://templatic.com/demos/plusone/listing/sweet-serenity/", :title => ""} Read More →
-                        .post-meta.clear-meta
-                          %span.post-category-none
-                            Article Categories:
-                            = succeed "." do
-                              %a{:href => "http://templatic.com/demos/plusone/lcategory/lifestyle/"} Lifestyle
-                          %span.single_comments
-                            %a.comments_popup_link{:href => "http://templatic.com/demos/plusone/listing/sweet-serenity/#respond", :title => "Comment on Sweet Serenity"} 0
-                          .post-share
-                            .addthis_toolbox.addthis_default_style
-                              %a.addthis_button_compact.sharethis.at300m{:href => "http://www.addthis.com/bookmark.php?v=250&username=xa-4c873bb26489d97f"}
-                                %span.at300bs.at15nc.at15t_compact>
-                                Share
-                              .atclear
-                          %span.post-view
-                            Views :
-                            %strong 912
-                          %span.single-website
-                            %a{:href => "http://templatic.com"} Website
-                        / post meta #end
-                        / Post Content Condition for Post Format
-                      .hr.clearfix
-                    %script{:src => "http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4c873bb26489d97f", :type => "text/javascript"}
-                    .pagination
-                      %a.nextpostslink{:href => "http://templatic.com/demos/plusone/page/2/"} Next Page
-                      .Navi
-                        %strong.on 1
-                        %a{:href => "http://templatic.com/demos/plusone/page/2/"} 2
-                        %a{:href => "http://templatic.com/demos/plusone/page/3/"} 3
-                        %a.nextpostslink{:href => "http://templatic.com/demos/plusone/page/2/"}
-                          %strong »
+                      = yield
+                    .hr.clearfix
+                    /%script{:src => "http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4c873bb26489d97f", :type => "text/javascript"}
                   .tabbertab.tabbertabhide{:title => ""}
                     %h2 Popular Posts
                     #post_130.post-130.listing.type-listing.status-publish.hentry.post

@@ -2,11 +2,8 @@ class TweetsController < ApplicationController
   before_filter :authenticate_user!, :except => [:index, :show]
 
   def index
-    @tweets = Tweet.all
+    @tweets = Tweet.page(params[:page]).per(2)
 
-    #    respond_to  do |format|
-    #      format.xml{render :xml => @tweets.to_xml}
-    #    end
   end
 
   def new
