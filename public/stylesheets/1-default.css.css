@@ -491,21 +491,23 @@ h1, h2, h3, h4, h5, h6 {
 .post a.hype_link, .b_like_disable, .post a:hover.hype_link {
   background: #4b6ea9;
   color: white;
+  margin-bottom: 3px;
+  cursor: pointer;
 }
 
-/* line 351, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 353, ../../app/assets/stylesheets/1-default.css.sass */
 .span_currentvote {
   background: #4b6ea9;
   color: white;
 }
 
-/* line 355, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 357, ../../app/assets/stylesheets/1-default.css.sass */
 .span_plusvote, .span_minusvote {
   background: black;
   color: white;
 }
 
-/* line 359, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 361, ../../app/assets/stylesheets/1-default.css.sass */
 .welcome_box {
   background: #f5f5f6;
   border: 1px solid #e1e1e1;
@@ -515,49 +517,49 @@ h1, h2, h3, h4, h5, h6 {
  *	6. Post Page Navigation 
  *----------------------------------------------------------------------------------- */
 /* single page post navigation --------------------------- */
-/* line 368, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 370, ../../app/assets/stylesheets/1-default.css.sass */
 .post-navigation {
   border-top: 1px solid #d6dce8;
   border-bottom: 1px solid #d6dce8;
 }
-/* line 371, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 373, ../../app/assets/stylesheets/1-default.css.sass */
 .post-navigation a {
   color: #334f8a;
 }
-/* line 373, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 375, ../../app/assets/stylesheets/1-default.css.sass */
 .post-navigation a:hover {
   color: #222222;
 }
 
-/* line 377, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 379, ../../app/assets/stylesheets/1-default.css.sass */
 a.post-prev {
   background: url(1-default/i_previous.png) no-repeat left;
 }
-/* line 379, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 381, ../../app/assets/stylesheets/1-default.css.sass */
 a:hover.post-prev {
   background: url(1-default/i_previous_h.png) no-repeat left;
 }
-/* line 381, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 383, ../../app/assets/stylesheets/1-default.css.sass */
 a.post-next {
   background: url(1-default/i_next.png) no-repeat right;
 }
-/* line 383, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 385, ../../app/assets/stylesheets/1-default.css.sass */
 a:hover.post-next {
   background: url(1-default/i_next_h.png) no-repeat right;
 }
 
 /* post pagination --------------------------- */
-/* line 389, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 391, ../../app/assets/stylesheets/1-default.css.sass */
 .Navi .on {
   background: #4b6ea9;
   color: white;
 }
-/* line 392, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 394, ../../app/assets/stylesheets/1-default.css.sass */
 .Navi a {
   background: #f1f1f1;
   color: #919191;
 }
-/* line 395, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 397, ../../app/assets/stylesheets/1-default.css.sass */
 .Navi a:hover {
   background: #4b6ea9;
   color: white;
@@ -566,38 +568,38 @@ a:hover.post-next {
 /*-----------------------------------------------------------------------------------
  *	7. Comments
  *----------------------------------------------------------------------------------- */
-/* line 403, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 405, ../../app/assets/stylesheets/1-default.css.sass */
 .comments h3 {
   color: #334f8a;
 }
 
-/* line 406, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 408, ../../app/assets/stylesheets/1-default.css.sass */
 .comment {
   background: #f4f6fa url(1-default/comment_line.png) repeat-y 99px 0px;
   border: 1px solid #d6dae4 !important;
 }
 
-/* line 410, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 412, ../../app/assets/stylesheets/1-default.css.sass */
 .comment-meta {
   border-bottom: 1px solid #d6dae4;
   color: #818181;
 }
-/* line 413, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 415, ../../app/assets/stylesheets/1-default.css.sass */
 .comment-meta a {
   color: #334f8a;
 }
-/* line 415, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 417, ../../app/assets/stylesheets/1-default.css.sass */
 .comment-meta a:hover {
   color: #222222;
 }
 
-/* line 420, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 422, ../../app/assets/stylesheets/1-default.css.sass */
 a.comment-reply-link {
   background: #91a7ca url(1-default/reply_arrow.png) no-repeat 47px;
   color: white;
   border-bottom: 1px solid #8394af;
 }
-/* line 424, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 426, ../../app/assets/stylesheets/1-default.css.sass */
 a.comment-reply-link:hover {
   background: #7084a2 url(1-default/reply_arrow.png) no-repeat 47px;
   color: white;
@@ -605,52 +607,52 @@ a.comment-reply-link:hover {
 }
 
 /* comment form ----------------------- */
-/* line 431, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 433, ../../app/assets/stylesheets/1-default.css.sass */
 #respond h3 {
   border-bottom: 1px solid #e5e5e5;
 }
 
-/* line 435, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 437, ../../app/assets/stylesheets/1-default.css.sass */
 .comments p.commpadd .author {
   background: url(1-default/i_user.png) no-repeat left top;
 }
-/* line 437, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 439, ../../app/assets/stylesheets/1-default.css.sass */
 .comments p.commpadd .email2 {
   background: url(1-default/i_email.png) no-repeat left top;
 }
-/* line 439, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 441, ../../app/assets/stylesheets/1-default.css.sass */
 .comments p.commpadd .site {
   background: url(1-default/i_web.png) no-repeat left top;
 }
-/* line 441, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 443, ../../app/assets/stylesheets/1-default.css.sass */
 .comments p.commpadd .comment2 {
   background: url(1-default/i_comment2.png) no-repeat left top;
 }
-/* line 443, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 445, ../../app/assets/stylesheets/1-default.css.sass */
 .comments p.commpadd input {
   background: url(1-default/textfieldbg.png) no-repeat left top;
   border: none;
   color: #a6a6a6;
 }
 
-/* line 448, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 450, ../../app/assets/stylesheets/1-default.css.sass */
 #respond textarea {
   background: url(1-default/textarea.png) no-repeat left top;
   color: #a6a6a6;
 }
 
-/* line 452, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 454, ../../app/assets/stylesheets/1-default.css.sass */
 .comments .comment .text-right p a.comment-reply-link {
   background: url(1-default/buttonbg.png) repeat-x left top;
 }
 
-/* line 455, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 457, ../../app/assets/stylesheets/1-default.css.sass */
 #submit {
   background: url(1-default/submit_btn.png) repeat-x;
   color: white;
   text-shadow: 1px 1px 1px #40577e;
 }
-/* line 459, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 461, ../../app/assets/stylesheets/1-default.css.sass */
 #submit:hover {
   background: url(1-default/submit_btn_h.png) repeat-x;
 }
@@ -658,7 +660,7 @@ a.comment-reply-link:hover {
 /*-----------------------------------------------------------------------------------
  *	 8. Widget
  *----------------------------------------------------------------------------------- */
-/* line 466, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 468, ../../app/assets/stylesheets/1-default.css.sass */
 .widget h3, .widget-small h3 {
   color: white;
   text-shadow: 1px 1px 1px #7b8eac;
@@ -666,122 +668,122 @@ a.comment-reply-link:hover {
   border-bottom: none;
 }
 
-/* line 472, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 474, ../../app/assets/stylesheets/1-default.css.sass */
 .article_btn {
   color: #4c6fa9;
   background: url(1-default/submit_article.png) no-repeat;
   text-shadow: 1px 1px 1px white;
 }
-/* line 476, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 478, ../../app/assets/stylesheets/1-default.css.sass */
 .article_btn:hover {
   background: url(1-default/submit_article_h.png) no-repeat;
 }
 
-/* line 479, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 481, ../../app/assets/stylesheets/1-default.css.sass */
 .submit_article small {
   color: #b4c4de;
   text-shadow: 1px 1px 1px #466395;
 }
 
 /* login widget ----------- */
-/* line 486, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 488, ../../app/assets/stylesheets/1-default.css.sass */
 .login_widget .form_row .textfield {
   border: 1px solid #c7ccd6;
   border-top: 2px solid #b3b3b3;
   border-left: 2px solid #b3b3b3;
   color: #626262;
 }
-/* line 491, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 493, ../../app/assets/stylesheets/1-default.css.sass */
 .login_widget .b_signin {
   color: white;
   text-shadow: 1px 1px 1px #384b6c;
   background: url(1-default/btn_login.png) no-repeat right top;
 }
-/* line 495, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 497, ../../app/assets/stylesheets/1-default.css.sass */
 .login_widget .b_signin:hover {
   background: url(1-default/btn_login_h.png) no-repeat right top;
 }
-/* line 497, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 499, ../../app/assets/stylesheets/1-default.css.sass */
 .login_widget .b_forgotpass {
   color: white;
   text-shadow: 1px 1px 1px #384b6c;
   background: url(1-default/btn_login.png) repeat-x right top;
 }
-/* line 501, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 503, ../../app/assets/stylesheets/1-default.css.sass */
 .login_widget .b_forgotpass:hover {
   background: url(1-default/btn_login_h.png) no-repeat right top;
 }
 
-/* line 504, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 506, ../../app/assets/stylesheets/1-default.css.sass */
 #testimonials blockquote {
   background: #f0f2f6;
 }
 
-/* line 507, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 509, ../../app/assets/stylesheets/1-default.css.sass */
 #contact_widget_frm .b_submit, #contact_frm .b_submit, #advancedsearch .adv_submit {
   color: white;
   text-shadow: 1px 1px 1px #384b6c;
   background: url(1-default/btn_login.png) repeat-x right top;
 }
 
-/* line 512, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 514, ../../app/assets/stylesheets/1-default.css.sass */
 #contact_widget_frm .b_submit:hover, #contact_frm .b_submit:hover, #advancedsearch .adv_submit:hover {
   background: url(1-default/btn_login_h.png) no-repeat right top;
 }
 
-/* line 515, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 517, ../../app/assets/stylesheets/1-default.css.sass */
 .sidebar .latest_posts li, #twitter_update_list li {
   border-bottom: 2px solid white;
 }
 
-/* line 518, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 520, ../../app/assets/stylesheets/1-default.css.sass */
 .sidebar .latest_posts li:last-child, #twitter_update_list li:last-child {
   border-bottom: none;
 }
 
-/* line 521, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 523, ../../app/assets/stylesheets/1-default.css.sass */
 .b_twitter {
   background: url(1-default/i_twitter.png) no-repeat left top;
 }
 
-/* line 524, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 526, ../../app/assets/stylesheets/1-default.css.sass */
 .latest_posts li, .popular li, #twitter li {
   border-bottom: 2px solid white;
 }
 
 /* login form color & bg */
-/* line 529, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 531, ../../app/assets/stylesheets/1-default.css.sass */
 .login_form_l {
   border: 3px double #cccccc;
 }
 
-/* line 535, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 537, ../../app/assets/stylesheets/1-default.css.sass */
 .login_form_l .form_row label, .registration_form_box .form_row label {
   color: #4a4a4a;
 }
 
-/* line 538, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 540, ../../app/assets/stylesheets/1-default.css.sass */
 .login_form_l .form_row .textfield, .registration_form_box .form_row .textfield {
   border: 1px double #cccccc;
   background: white;
 }
 
-/* line 542, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 544, ../../app/assets/stylesheets/1-default.css.sass */
 .login_form_l a {
   color: #cc4b3e;
   font-size: 12px;
 }
-/* line 545, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 547, ../../app/assets/stylesheets/1-default.css.sass */
 .login_form_l a:hover {
   color: #333333;
 }
 
-/* line 548, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 550, ../../app/assets/stylesheets/1-default.css.sass */
 .upload_img input {
   border: 1px solid #cccccc;
 }
 
-/* line 551, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 553, ../../app/assets/stylesheets/1-default.css.sass */
 .error_msg {
   background: #ffe4e4;
   border-top: 1px solid #ee8686;
@@ -789,7 +791,7 @@ a.comment-reply-link:hover {
   color: #d70000;
 }
 
-/* line 557, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 559, ../../app/assets/stylesheets/1-default.css.sass */
 .success_msg {
   text-align: center;
   color: #356c1d;
@@ -798,36 +800,36 @@ a.comment-reply-link:hover {
   border-bottom: 1px solid #7ea96b;
 }
 
-/* line 564, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 566, ../../app/assets/stylesheets/1-default.css.sass */
 .login_form_l .b_signin_n {
   color: white;
   border: none;
   text-shadow: 1px 1px 1px #384b6c;
   background: url(1-default/btn_login.png) repeat-x right top;
 }
-/* line 569, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 571, ../../app/assets/stylesheets/1-default.css.sass */
 .login_form_l .b_signin_n:hover {
   background: url(1-default/btn_login_h.png) no-repeat right top;
 }
 
 /* registration color */
-/* line 574, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 576, ../../app/assets/stylesheets/1-default.css.sass */
 #reg_passmail {
   color: #a8a79f;
 }
 
-/* line 577, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 579, ../../app/assets/stylesheets/1-default.css.sass */
 .registration_form_box {
   border: 3px double #cccccc;
 }
-/* line 579, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 581, ../../app/assets/stylesheets/1-default.css.sass */
 .registration_form_box .b_registernow {
   color: white;
   border: none;
   text-shadow: 1px 1px 1px #384b6c;
   background: url(1-default/btn_login.png) repeat-x right top;
 }
-/* line 584, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 586, ../../app/assets/stylesheets/1-default.css.sass */
 .registration_form_box .b_registernow:hover {
   background: url(1-default/btn_login_h.png) no-repeat right top;
 }
@@ -835,14 +837,14 @@ a.comment-reply-link:hover {
 /*-----------------------------------------------------------------------------------
  *   9. Bottom Section
  *----------------------------------------------------------------------------------- */
-/* line 591, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 593, ../../app/assets/stylesheets/1-default.css.sass */
 .bottom .widget h3 {
   color: #4b6ea9;
   background: none;
   text-shadow: 1px 1px 1px white;
 }
 
-/* line 596, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 598, ../../app/assets/stylesheets/1-default.css.sass */
 .one_column {
   background: white;
 }
@@ -850,11 +852,11 @@ a.comment-reply-link:hover {
 /*-----------------------------------------------------------------------------------
  *	 10. Footer
  *----------------------------------------------------------------------------------- */
-/* line 603, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 605, ../../app/assets/stylesheets/1-default.css.sass */
 .footer_in {
   color: #959595;
 }
-/* line 605, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 607, ../../app/assets/stylesheets/1-default.css.sass */
 .footer_in a {
   color: #959595;
 }
@@ -862,90 +864,90 @@ a.comment-reply-link:hover {
 /*-----------------------------------------------------------------------------------
  *	17. Tabber  Style start
  *----------------------------------------------------------------------------------- */
-/* line 612, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 614, ../../app/assets/stylesheets/1-default.css.sass */
 .tabbernav {
   background: url(1-default/tab_bg.png) repeat-x bottom;
 }
-/* line 615, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 617, ../../app/assets/stylesheets/1-default.css.sass */
 .tabbernav li a {
   color: #9aacc9;
 }
-/* line 617, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 619, ../../app/assets/stylesheets/1-default.css.sass */
 .tabbernav li a:hover {
   color: #3b5998;
 }
-/* line 619, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 621, ../../app/assets/stylesheets/1-default.css.sass */
 .tabbernav li.tabberactive {
   background: url(1-default/tab_active.png) repeat-x;
   color: #3b5998;
   border: 1px solid #c9d4ea;
   border-bottom: 0px;
 }
-/* line 624, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 626, ../../app/assets/stylesheets/1-default.css.sass */
 .tabbernav li.tabberactive a {
   color: #3b5998;
   background: none;
 }
-/* line 627, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 629, ../../app/assets/stylesheets/1-default.css.sass */
 .tabbernav li.tabberactive a:hover {
   color: #3b5998;
 }
 
-/* line 630, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 632, ../../app/assets/stylesheets/1-default.css.sass */
 .post a {
   color: #4b6ea9;
 }
-/* line 632, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 634, ../../app/assets/stylesheets/1-default.css.sass */
 .post a:hover {
   color: #324a73;
 }
 
-/* line 635, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 637, ../../app/assets/stylesheets/1-default.css.sass */
 .post-category {
   background: url(1-default/i_folder.png) no-repeat 0px 2px;
 }
 
-/* line 638, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 640, ../../app/assets/stylesheets/1-default.css.sass */
 .single_comments a {
   background: url(1-default/i_comment.png) no-repeat 0px 3px;
 }
-/* line 640, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 642, ../../app/assets/stylesheets/1-default.css.sass */
 .single_comments a:hover {
   background: url(1-default/i_comment.png) no-repeat 0px 3px;
 }
 
-/* line 643, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 645, ../../app/assets/stylesheets/1-default.css.sass */
 .single-website a {
   background: url(1-default/i_website.png) no-repeat 0px 3px;
 }
 
-/* line 646, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 648, ../../app/assets/stylesheets/1-default.css.sass */
 .post-tags {
   background: url(1-default/i_tag.png) no-repeat 0px 2px;
 }
 
-/* line 649, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 651, ../../app/assets/stylesheets/1-default.css.sass */
 .at15t_compact {
   background: url(1-default/i_share.png) no-repeat 0px 11px !important;
 }
 
-/* line 653, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 655, ../../app/assets/stylesheets/1-default.css.sass */
 .post-meta .edit a {
   background: url(1-default/i_edit.png) no-repeat 0px 2px;
   color: #009900;
 }
-/* line 656, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 658, ../../app/assets/stylesheets/1-default.css.sass */
 .post-meta .delete a {
   background: url(1-default/i_delete.png) no-repeat 0px 2px;
   color: #cc0000;
 }
 
-/* line 660, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 662, ../../app/assets/stylesheets/1-default.css.sass */
 .published {
   background: url(1-default/i_checkmark.png) no-repeat 0px 0px;
 }
 
-/* line 663, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 665, ../../app/assets/stylesheets/1-default.css.sass */
 .blog_listing a.hype_lnk, a.hype_lnk {
   color: white;
 }
@@ -953,31 +955,31 @@ a.comment-reply-link:hover {
 /*-----------------------------------------------------------------------------------
  *	 18. Add listing Form 
  *----------------------------------------------------------------------------------- */
-/* line 670, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 672, ../../app/assets/stylesheets/1-default.css.sass */
 .button {
   color: white;
   border: none;
   text-shadow: 1px 1px 1px #384b6c;
   background: url(1-default/btn.png) repeat-x right bottom;
 }
-/* line 675, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 677, ../../app/assets/stylesheets/1-default.css.sass */
 .button:hover {
   background: url(1-default/btn_h.png) no-repeat right bottom;
 }
 
-/* line 678, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 680, ../../app/assets/stylesheets/1-default.css.sass */
 .b_cancel, .b_publish, .entry .post-content a.b_goback {
   color: white;
   border: none;
   text-shadow: 1px 1px 1px #384b6c;
   background: url(1-default/btn_login.png) repeat-x right bottom;
 }
-/* line 683, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 685, ../../app/assets/stylesheets/1-default.css.sass */
 .b_cancel:hover, .b_publish:hover, .entry .post-content a.b_goback:hover {
   background: url(1-default/btn_login_h.png) no-repeat right bottom;
 }
 
-/* line 686, ../../app/assets/stylesheets/1-default.css.sass */
+/* line 688, ../../app/assets/stylesheets/1-default.css.sass */
 .b_cancel:hover {
   background: url(1-default/btn_login_h.png) no-repeat right bottom;
 }

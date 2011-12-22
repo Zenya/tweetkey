@@ -312,30 +312,8 @@
             .widget
               %h3{:style=> "padding-left: 50px;"}Категории
               %ul
-                %li.cat-item.cat-item-200
-                  %a{:href => "http://templatic.com/demos/plusone/lcategory/1/", :title => "View all posts filed under 1"} 1
-                  (28)
-                %li.cat-item.cat-item-12
-                  %a{:href => "http://templatic.com/demos/plusone/lcategory/clothing/", :title => "View all posts filed under Clothing"} Clothing
-                  (41)
-                %li.cat-item.cat-item-7
-                  %a{:href => "http://templatic.com/demos/plusone/lcategory/fashion/", :title => "View all posts filed under Fashion"} Fashion
-                  (14)
-                %li.cat-item.cat-item-11
-                  %a{:href => "http://templatic.com/demos/plusone/lcategory/fashion-style/", :title => "View all posts filed under Fashion Style"} Fashion Style
-                  (16)
-                %li.cat-item.cat-item-13
-                  %a{:href => "http://templatic.com/demos/plusone/lcategory/high-fashion/", :title => "View all posts filed under High fashion"} High fashion
-                  (8)
-                %li.cat-item.cat-item-8
-                  %a{:href => "http://templatic.com/demos/plusone/lcategory/lifestyle/", :title => "View all posts filed under Lifestyle"} Lifestyle
-                  (19)
-                %li.cat-item.cat-item-9
-                  %a{:href => "http://templatic.com/demos/plusone/lcategory/looks/", :title => "View all posts filed under Looks"} Looks
-                  (17)
-                %li.cat-item.cat-item-14
-                  %a{:href => "http://templatic.com/demos/plusone/lcategory/outstanding/", :title => "View all posts filed under Outstanding"} Outstanding
-                  (9)
+                - @categories.each do |c|
+                  %li.cat-item=link_to "#{c.name} (#{c.tweets.count})", :controller => "categories", :action => "show", :id => c.name
         / /Container #end
       / /outer  #end
       / bottom section start

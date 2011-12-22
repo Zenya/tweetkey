@@ -10,6 +10,8 @@ Tweetkey::Application.routes.draw do
   match '/tweets/rank'
   match '/tweets/favorites'
   
+  resources :categories
+  
   resources :tweets do
     resources :comments
   end

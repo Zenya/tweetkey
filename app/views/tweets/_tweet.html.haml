@@ -1,12 +1,10 @@
-= tweet.rank
-= tweet.category.name
-= tweet.hotkey
-
-#post_134.post-134.listing.type-listing.status-publish.hentry.post
+.post-134.listing.type-listing.status-publish.hentry.post
   .left
     #addlike134.vote
-      %span.span_currentvote 10
-      %span.b_like_disable Hype
+      %span.b_like_disable ▲
+      %span.span_currentvote 
+        = tweet.rank
+      %span.b_like_disable ▼
   / Post Title Condition for Post Format
   %h3
     %a{:href => "http://templatic.com/demos/plusone/listing/sweet-serenity/"}
@@ -16,7 +14,7 @@
     добавил
     %span.post-author
       %a{:href => "http://templatic.com/demos/plusone/author/saqib-4343/", :title => "Posts by Saqib"}
-        =tweet.category
+        =tweet.author
     %span.post-date
       May 21, 2011
     %span.post-category
@@ -30,7 +28,7 @@
     %a.read_more{:href => "http://templatic.com/demos/plusone/listing/sweet-serenity/", :title => ""} Read More →
   .post-meta.clear-meta
     %span.post-category-none
-      Article Categories:
+      Категории:
       = succeed "." do
         %a{:href => "http://templatic.com/demos/plusone/lcategory/lifestyle/"} Lifestyle
     %span.single_comments
@@ -39,13 +37,13 @@
       .addthis_toolbox.addthis_default_style
         %a.addthis_button_compact.sharethis.at300m{:href => "http://www.addthis.com/bookmark.php?v=250&username=xa-4c873bb26489d97f"}
           %span.at300bs.at15nc.at15t_compact>
-          Share
+          Поделиться
         .atclear
         .atclear
     %span.post-view
-      Views :
+      Просмотров :
       %strong 912
     %span.single-website
-      %a{:href => "http://templatic.com"} Website
+      %a{:href => "http://templatic.com"} Сайт автора
   / post meta #end
   / Post Content Condition for Post Format

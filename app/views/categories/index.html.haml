@@ -1,0 +1,12 @@
+%table
+  %tr
+    %th
+    %th
+    %th
+  - @categories.each do |category|
+    %tr
+      %td= link_to category.name, category
+      %td= link_to 'Edit', edit_category_path(category)
+      %td= link_to 'Destroy', category, confirm: 'Are you sure?', method: :delete
+%br/
+= link_to 'Создать категорию', new_category_path
