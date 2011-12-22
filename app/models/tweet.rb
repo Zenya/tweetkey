@@ -18,6 +18,8 @@ class Tweet
 
   embeds_many :comments
 
+  scope :best, order_by(:rank => :desc)
+
   def favorites(user, todo)
     @author = User.where(:email => author).to_a
     if todo == "remove"

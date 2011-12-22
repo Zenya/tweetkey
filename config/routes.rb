@@ -2,13 +2,13 @@ Tweetkey::Application.routes.draw do
 
 
   get "/users/index"
-
   get "/users/show"
 
   root :to => 'tweets#index'
 
   match '/tweets/rank'
   match '/tweets/favorites'
+  match '/:type' => "tweets#index" 
   
   resources :categories
   

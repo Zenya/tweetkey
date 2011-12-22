@@ -16,7 +16,7 @@
       %a{:href => "http://templatic.com/demos/plusone/author/saqib-4343/", :title => "Posts by Saqib"}
         =tweet.author
     %span.post-date
-      May 21, 2011
+      = tweet.updated_at.to_s(:short)
     %span.post-category
       Категория:
       = succeed "." do

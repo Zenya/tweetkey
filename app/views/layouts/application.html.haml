@@ -19,19 +19,12 @@
       .outer
         / Container
         #container.clear
-          = javascript_include_tag "http://templatic.com/demos/plusone/wp-content/themes/plusone/js/tabber.js"
           .content.left
             .content_top
             .content_bg
               #loop.list.clear
                 #tab1.tabberlive
-                  %ul.tabbernav
-                    %li.tabberactive
-                      =link_to "Последние"
-                    %li
-                      =link_to "Лучшие"
-                    %li
-                      =link_to "Обсуждаемые"
+                  = render "tabs"
                   .tabbertab{:title => ""}
                     %h2 Latest Posts
                     #loop.list.clear
@@ -241,69 +234,6 @@
                           %a{:href => "http://templatic.com"} Website
                       / post meta #end
                   .tabbertab.last.tabbertabhide{:title => ""}
-                    %h2 Recent Comment
-                    %ul.recent-comment
-                      %li.clearfix
-                        %img.avatar.avatar-40.photo{:alt => "", :height => "40", :src => "http://0.gravatar.com/avatar/8a15a1cc74d73a0f3d8b3c22964021ae?s=40&d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&r=G", :width => "40"}
-                          %p
-                            %span
-                              %a{:href => "http://templatic.com/demos/plusone/listing/acnes-cypress-boots/#comment-107", :title => "fifa | Acnes Cypress boots"} fifa
-                            %br
-                              This so good and best. Yo!
-                          %p
-                            %small
-                              %a{:href => "http://templatic.com/demos/plusone/listing/acnes-cypress-boots/"} View Article
-                              |
-                              %a{:href => "http://templatic.com/demos/plusone/listing/acnes-cypress-boots/#comment-107"} Comment
-                      %li.clearfix
-                        %img.avatar.avatar-40.photo{:alt => "", :height => "40", :src => "http://1.gravatar.com/avatar/9478b8535f6f54356bb1972175d34530?s=40&d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&r=G", :width => "40"}
-                          %p
-                            %span
-                              %a{:href => "http://templatic.com/demos/plusone/listing/sweet-serenity/#comment-106", :title => "Werldklass | Sweet Serenity"} Werldklass
-                            %br
-                              ทดสอบ
-                          %p
-                            %small
-                              %a{:href => "http://templatic.com/demos/plusone/listing/sweet-serenity/"} View Article
-                              |
-                              %a{:href => "http://templatic.com/demos/plusone/listing/sweet-serenity/#comment-106"} Comment
-                      %li.clearfix
-                        %img.avatar.avatar-40.photo{:alt => "", :height => "40", :src => "http://0.gravatar.com/avatar/4a9b90be20d1c37c7aa1dc9bbc67b056?s=40&d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&r=G", :width => "40"}
-                          %p
-                            %span
-                              %a{:href => "http://templatic.com/demos/plusone/listing/cute-magazine-alert/#comment-105", :title => "Khan Helaluzzaman Ayon | Cute Magazine Alert"} Khan Helaluzzaman Ayon
-                            %br
-                              test
-                          %p
-                            %small
-                              %a{:href => "http://templatic.com/demos/plusone/listing/cute-magazine-alert/"} View Article
-                              |
-                              %a{:href => "http://templatic.com/demos/plusone/listing/cute-magazine-alert/#comment-105"} Comment
-                      %li.clearfix
-                        %img.avatar.avatar-40.photo{:alt => "", :height => "40", :src => "http://0.gravatar.com/avatar/4e02955b34b7ca1647f76d29731c1420?s=40&d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&r=G", :width => "40"}
-                          %p
-                            %span
-                              %a{:href => "http://templatic.com/demos/plusone/listing/cute-magazine-alert/#comment-104", :title => "sdfsf | Cute Magazine Alert"} sdfsf
-                            %br
-                              sfdqsdfqsdf
-                          %p
-                            %small
-                              %a{:href => "http://templatic.com/demos/plusone/listing/cute-magazine-alert/"} View Article
-                              |
-                              %a{:href => "http://templatic.com/demos/plusone/listing/cute-magazine-alert/#comment-104"} Comment
-                      %li.clearfix
-                        %img.avatar.avatar-40.photo{:alt => "", :height => "40", :src => "http://1.gravatar.com/avatar/3755904cbf1a1432f3cbe37b4730096b?s=40&d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&r=G", :width => "40"}
-                          %p
-                            %span
-                              %a{:href => "http://templatic.com/demos/plusone/listing/the-allen-solly-bags/#comment-103", :title => "Real HCG diet | The Allen Solly Bags"} Real HCG diet
-                            %br
-                              Thanks for this great information! I really appreciate this. I actually let my husband have a look and he posted a link to it on his blog :)
-                          %p
-                            %small
-                              %a{:href => "http://templatic.com/demos/plusone/listing/the-allen-solly-bags/"} View Article
-                              |
-                              %a{:href => "http://templatic.com/demos/plusone/listing/the-allen-solly-bags/#comment-103"} Comment
-            / content bg #end
             .content_bottom
           / content end
           .sidebar.right

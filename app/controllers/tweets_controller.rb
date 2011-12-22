@@ -2,8 +2,8 @@ class TweetsController < ApplicationController
   before_filter :authenticate_user!, :except => [:index, :show]
 
   def index
-    @tweets = Tweet.page(params[:page]).per(2)
-
+    @tweets = Tweet.page(params[:page]).per(2) unless params[:type]
+    @tweets = Tweet.best.page(params[:page]).per(2) if params[:type] == "best"
   end
 
   def new
@@ -61,4 +61,5 @@ class TweetsController < ApplicationController
       format.json { render :json => Tweet.find(params[:id]).favorites(current_user, params[:todo]) }
     end
   end
+
 end

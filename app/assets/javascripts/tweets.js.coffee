@@ -7,3 +7,12 @@ $ ->
         $('.pagination').text("Загрузка ...")
         $.getScript(url)
     $(window).scroll()
+
+  if history and history.pushState
+    $("a").live "click", (e) ->
+      $.getScript @href
+      history.pushState null, document.title, @href
+      e.preventDefault()
+
+    $(window).bind "popstate", ->
+      $.getScript location.href

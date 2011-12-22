@@ -1,0 +1,19 @@
+%ul.tabbernav
+  - unless params[:type]
+    %li.tabberactive
+      =link_to "Последние"
+  - else
+    %li
+      =link_to "Последние"
+  - if params[:type] == "best"
+    %li.tabberactive
+      =link_to "Лучшие", "/best"
+  - else 
+    %li
+      =link_to "Лучшие", "/best"
+  - if params[:type] == "discussed"
+    %li.tabberactive
+      =link_to "Обсуждаемые", "/discussed"
+  - else
+    %li
+      =link_to "Обсуждаемые", "/discussed"
