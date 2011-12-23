@@ -1,4 +1,4 @@
-!= "$('ul.tabbernav').html('#{j render "tabs"}');"
+!= "$('ul.tabbernav').html('#{j render "shared/tabs"}').show();"
 - unless params[:page]
   != "$('#loop_main').html('#{j render(@tweets)}').append('#{j paginate(@tweets)}');"
 - else

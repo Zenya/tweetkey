@@ -1,1 +1,7 @@
-alert "123"
+!= "$('ul.tabbernav').html('#{j render "shared/tabs"}');"
+- unless params[:page]
+  != "$('#loop_main').html('#{j render(@tweets)}').append('#{j paginate(@tweets)}');"
+- else
+  != "$('#loop_main').append('#{j render(@tweets)}').append('#{j paginate(@tweets)}');"
+  != if "$(#span.next).length"
+    != "$('.pagination').remove();"

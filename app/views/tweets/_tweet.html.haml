@@ -19,8 +19,7 @@
       = tweet.updated_at.to_s(:short)
     %span.post-category
       Категория:
-      = succeed "." do
-        %a{:href => "http://templatic.com/demos/plusone/lcategory/lifestyle/"}=tweet.category.name
+      =link_to tweet.category.name, "/categories/#{tweet.category.name}"
   / post meta #end
   / Post Content Condition for Post Format
   .post-content

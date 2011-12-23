@@ -1,0 +1,11 @@
+%table 
+  - @users.each do |u|
+    %tr
+      %td
+        %span.span_currentvote
+          = u.karma
+      %td
+        &nbsp;
+      %td
+        %h3
+          =link_to u.username, "/users/#{u.id}"

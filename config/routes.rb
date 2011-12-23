@@ -1,23 +1,21 @@
 Tweetkey::Application.routes.draw do
 
-
-  get "/users/index"
-  get "/users/show"
+  match "/users" => "users#index"
+  #get "/users/show"
 
   root :to => 'tweets#index'
 
   match '/tweets/rank'
   match '/tweets/favorites'
-  match '/:type' => "tweets#index" 
-  
-  resources :categories
   
   resources :tweets do
     resources :comments
   end
 
-  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth _callbacks" }
+  resources :categories
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
+  match '/:type' => "tweets#index" 
 #  match '/auth/:provider/callback', to: 'devise/sessions#create'
 
   # The priority is based upon order of creation:

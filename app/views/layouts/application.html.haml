@@ -15,16 +15,19 @@
     .wrapper
       .header.clear
         / header #end
-
       .outer
         / Container
         #container.clear
           .content.left
             .content_top
             .content_bg
+              .main
+                =link_to "Идеи", "/" 
+                =link_to "Пользователи", "/users"
+              %br
               #loop.list.clear
                 #tab1.tabberlive
-                  = render "tabs"
+                  = render "shared/tabs" if params[:controller] == "tweets"
                   .tabbertab{:title => ""}
                     %h2 Latest Posts
                     #loop_main.list.clear
@@ -238,12 +241,13 @@
           / content end
           .sidebar.right
             .submit_article
-              %input.article_btn{:onclick => "window.location.href='tweets/new'", :type => "button", :value => "Добавить"}
+              %input.article_btn{:onclick => "window.location.href='/tweets/new'", :type => "button", :value => "Добавить"}
             .widget
               %h3{:style=> "padding-left: 50px;"}Категории
               %ul
-                - @categories.each do |c|
-                  %li.cat-item=link_to "#{c.name} (#{c.tweets.count})", :controller => "categories", :action => "show", :id => c.name
+                - unless params[:controller] == "devise/sessions"
+                  - @categories.each do |c|
+                    %li.cat-item=link_to "#{c.name} (#{c.tweets.count})", "/categories/#{c.name}"
         / /Container #end
       / /outer  #end
       / bottom section start
@@ -264,4 +268,4 @@
             © 2011 All Rights Reserved.
       / footer #end
    
-    = link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook)
+    /= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook)

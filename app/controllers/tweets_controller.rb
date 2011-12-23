@@ -1,5 +1,5 @@
 class TweetsController < ApplicationController
-  before_filter :authenticate_user!, :except => [:index, :show]
+  #before_filter :authenticate_user!, :except => [:index, :show]
 
   def index
     @tweets = Tweet.page(params[:page]).per(2) unless params[:type]
