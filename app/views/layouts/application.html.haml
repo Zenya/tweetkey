@@ -27,7 +27,7 @@
                   = render "tabs"
                   .tabbertab{:title => ""}
                     %h2 Latest Posts
-                    #loop.list.clear
+                    #loop_main.list.clear
                       = yield
                     .hr.clearfix
                     /%script{:src => "http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4c873bb26489d97f", :type => "text/javascript"}

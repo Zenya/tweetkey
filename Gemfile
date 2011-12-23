@@ -30,6 +30,7 @@ gem 'unicorn'
 gem 'formtastic'
 #gem 'meta_search', '~> 1.1.0.pre2'
 gem 'kaminari'
+gem 'memcache-client'
 #gem 'addressable', :require => 'addressable/uri'
 
 #gem 'rmagick'

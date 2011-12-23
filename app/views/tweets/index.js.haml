@@ -1,1 +1,7 @@
-!= "$('#loop').append('#{j render(@tweets)}');"
+!= "$('ul.tabbernav').html('#{j render "tabs"}');"
+- unless params[:page]
+  != "$('#loop_main').html('#{j render(@tweets)}').append('#{j paginate(@tweets)}');"
+- else
+  != "$('#loop_main').append('#{j render(@tweets)}').append('#{j paginate(@tweets)}');"
+  != if "$(#span.next).length"
+    != "$('.pagination').remove();"
