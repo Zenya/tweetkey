@@ -2,7 +2,7 @@
 %html
   %head
     %title Tweetkey
-    //= stylesheet_link_tag    "application"
+    /= stylesheet_link_tag    "application"
     = javascript_include_tag "application"
     = csrf_meta_tags
 
@@ -22,8 +22,9 @@
             .content_top
             .content_bg
               .main
-                =link_to "Идеи", "/" 
+                =link_to "Публикации", "/" 
                 =link_to "Пользователи", "/users"
+                =link_to "Предложения", "/users"
               %br
               #loop.list.clear
                 #tab1.tabberlive

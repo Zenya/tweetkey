@@ -1,0 +1,14 @@
+Description:
+    Generate Rich Internet Aplication scaffold
+
+Example:
+    rails generate ria Model
+
+    This will create:
+      unless page
+      html5 history api
+      ajax partial reload
+
+      mongoid model
+      haml
+      coffeecsript

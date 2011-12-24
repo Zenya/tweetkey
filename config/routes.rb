@@ -1,5 +1,7 @@
 Tweetkey::Application.routes.draw do
 
+  resources :proposals
+
   match "/users" => "users#index"
   #get "/users/show"
 
