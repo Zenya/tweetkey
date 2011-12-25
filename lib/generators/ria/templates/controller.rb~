@@ -1,4 +1,4 @@
-class ProposalsController < ApplicationController
+class <%=plural_name.capitalize%>Controller < ApplicationController
 
   def index
     @proposals = Proposal.all
