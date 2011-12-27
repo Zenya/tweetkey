@@ -40,8 +40,6 @@ gem 'memcache-client'
 #gem 'postmark-rails'
 
 group :development do
-  gem 'ruby-debug19', :require => 'ruby-debug'
-
   # for devise views generator
   gem 'hpricot'
   gem 'ruby_parser'
@@ -72,5 +70,4 @@ group :test do
   gem 'guard-rspec'
   gem 'guard-cucumber'
   gem 'spork', '~> 0.9.0.rc'
-
 end

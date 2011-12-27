@@ -5,28 +5,28 @@ class ProposalsController < ApplicationController
   end
 
   def show
-    @proposal = Proposal.find(params[:id])
+    @proposals = Proposal.find(params[:id])
   end
 
   def new
-    @proposal = Proposal.new
+    @proposals = Proposal.new
   end
 
   def edit
-    @proposal = Proposal.find(params[:id])
+    @proposals = Proposal.find(params[:id])
   end
 
   def create
-    @proposal = Proposal.new(params[:proposal])
+    @proposals = Proposal.new(params[:proposal])
   end
 
   def update
-    @proposal = Proposal.find(params[:id])
+    @proposals = Proposal.find(params[:id])
   end
 
   def destroy
-    @proposal = Proposal.find(params[:id])
-    @proposal.destroy
+    @proposals = Proposal.find(params[:id])
+    @proposals.destroy
   end
 
 end
