@@ -9,7 +9,7 @@ class ProposalsController < ApplicationController
   end
 
   def new
-    @proposals = Proposal.new
+    @proposal = Proposal.new
   end
 
   def edit

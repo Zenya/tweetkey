@@ -1,0 +1,9 @@
+= form_for(@<%=file_name%>) do |f|
+	<% @fields.each do |field| p = field.split(":") %>.field
+    = f.label :<%=p.first%>
+    %br/
+		<%="f.text_field :#{p.first}" if p.last == "string"%><%="f.text_area :#{p.first}" if p.last == "text"%>
+    %br
+	<% end %>
+  .actions
+    = f.submit

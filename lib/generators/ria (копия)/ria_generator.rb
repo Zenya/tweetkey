@@ -23,7 +23,6 @@ class RiaGenerator < Rails::Generators::Base
     template "_model.html.haml", "app/views/#{plural_name}/_#{file_name}.html.haml"
     template "index.js.haml", "app/views/#{plural_name}/index.js.haml"
     template "index.html.haml", "app/views/#{plural_name}/index.html.haml"
-    template "_form.html.haml", "app/views/#{plural_name}/_form.html.haml"
     template "controller.rb", "app/controllers/#{plural_name}_controller.rb"
     template "model.rb", "app/models/#{file_name}.rb"
     route "resources :#{plural_name}"

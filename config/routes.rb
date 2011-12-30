@@ -1,5 +1,7 @@
 Tweetkey::Application.routes.draw do
 
+  resources :slaviks
+
   resources :proposals
 
   match "/users" => "users#index"

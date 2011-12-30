@@ -1,7 +1,7 @@
 != "$('ul.tabbernav').html('#{j render "shared/tabs"}').show();"
 - unless params[:page]
-  != "$('#loop_main').html('#{j render(@proposals)}').append('#{j paginate(@proposals)}');"
+  != "$('#loop_main').html('#{j render(@proposals)}').append('#{j paginate(@proposals) if @proposals.exists?}');"
 - else
-  != "$('#loop_main').append('#{j render(@proposals)}').append('#{j paginate(@proposals)}');"
+  != "$('#loop_main').append('#{j render(@proposals)}').append('#{j paginate(@proposals) if @proposals.exists?}');"
   != if "$(#span.next).length"
     != "$('.pagination').remove();"

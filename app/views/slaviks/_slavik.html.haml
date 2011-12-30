@@ -1,0 +1,10 @@
+%table 
+  - @slavik.each do |s|
+    %tr
+      %td
+        %span.span_currentvote
+      %td
+        &nbsp;
+      %td
+        %h3
+          =link_to s.content, "/slaviks/#{s.id}"

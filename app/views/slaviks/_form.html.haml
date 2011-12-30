@@ -1,0 +1,12 @@
+= form_for(@slavik) do |f|
+	.field
+    = f.label :title
+    %br/
+		f.text_field :title
+    %br.field
+    = f.label :content
+    %br/
+		f.text_area :content
+    %br
+  .actions
+    = f.submit

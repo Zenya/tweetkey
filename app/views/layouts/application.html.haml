@@ -25,6 +25,11 @@
                 =link_to "Публикации", "/" 
                 =link_to "Пользователи", "/users"
                 =link_to "Предложения", "/proposals"
+
+              -if params[:controller] == "proposals"
+                %br
+                .main
+                  =link_to "Добавить", "/proposals/new" 
               %br
               #loop.list.clear
                 #tab1.tabberlive

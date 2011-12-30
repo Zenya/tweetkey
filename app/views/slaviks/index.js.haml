@@ -1,0 +1,7 @@
+!= "$('ul.tabbernav').html('#{j render "shared/tabs"}').show();"
+- unless params[:page]
+  != "$('#loop_main').html('#{j render(@slaviks)}').append('#{j paginate(@slaviks) if @slaviks.exists?}');"
+- else
+  != "$('#loop_main').append('#{j render(@slaviks)}').append('#{j paginate(@slaviks) if @slaviks.exists?}');"
+  != if "$(#span.next).length"
+    != "$('.pagination').remove();"
